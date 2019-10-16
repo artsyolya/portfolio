@@ -31,6 +31,9 @@ footer {
 	margin:0;
 	padding:0;
 }
+.linkedin-padding {
+    padding: 24px 10px 24px 70px;
+}
 .insta-padding {
     padding: 24px;
 }
