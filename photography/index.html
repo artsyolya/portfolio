@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>OS Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3stylesheet.css">
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+	<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
+		<a href="#" style="text-decoration:none">
+		<h3 class="logo-top">Olga Sago</h3>
+		<h4 class="logo-bottom">PHOTOGRAPHY</h4>
+		</a>
+    </div>
+	
+	
+    <a class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
+	<div class="w3-dropdown-hover w3-hide-small">
+      <a href="#portfolio"><button class="w3-button w3-padding-24" title="Portfolio">Portfolio<i class="fa fa-caret-down"></i></button></a>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/photography/portfolio/elopements.html" class="w3-bar-item w3-button">Elopements</a>
+        <a href="/photography/portfolio/maternity-and-new-born.html" class="w3-bar-item w3-button">Maternity & New Born</a>
+        <a href="/photography/portfolio/portraits-and-family.html" class="w3-bar-item w3-button">Portraits & Family</a>
+		<a href="/photography/portfolio/commercial-and-editorial.html" class="w3-bar-item w3-button">Commercial & Editorial</a>
+		<a href="/photography/portfolio/events.html" class="w3-bar-item w3-button">Events</a>
+		<a href="/photography/portfolio/travel.html" class="w3-bar-item w3-button">Travel</a>
+      </div>
+    </div>
+	<a href="/photography/published-work.html" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Published Work</a> 
+	<a href="/photography/about.html" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">About</a> 
+	<a href="/photography/contact.html" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Contact</a> 
+ 
+	<a href="http://facebook.com/OlgaSagoPhotography/" target="_blank"><em class="fa fa-facebook-official w3-hover-opacity w3-padding-16-24 w3-xlarge w3-right w3-hide-small"></em></a> 
+	<a href="http://instagram.com/olga.s.photos/" target="_blank"><em class="fa fa-instagram w3-hover-opacity insta-padding w3-xlarge w3-right w3-hide-small"></em></a>
+	</div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-right" style="margin-top:73px">
+  <a href="#" class="w3-bar-item w3-button w3-center text-fuscia" onclick="myFunction()">Portfolio</a>
+  <a href="/photography/published-work.html" class="w3-bar-item w3-button w3-center" onclick="myFunction()">Published Work</a>
+  <a href="/photography/about.html" class="w3-bar-item w3-button w3-center" onclick="myFunction()">About</a>
+  <a href="/photography/contact.html" class="w3-bar-item w3-button w3-center" onclick="myFunction()">Contact</a>
+  <div class="w3-center">
+	<a href="http://facebook.com/OlgaSagoPhotography/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge"></i></a>
+	<a href="http://instagram.com/olga.s.photos/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a>
+  </div>	
+</div>
+
+<!-- Page content -->
+<div class="w3-content contentStart" style="max-width:3000px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+      <picture>
+          <source media="(min-width:500px)" srcset="/photography/images/ClendeninMaternity_180701_0666OS.jpg">
+          <source media="(max-width:499px)" srcset="/photography/images/ClendeninMaternity_180701_0666OS-2.jpg">
+          <img src="/photography/images/ClendeninMaternity_180701_0666OS-2.jpg" style="width:100%">
+      </picture>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <picture>
+        <source media="(min-width:500px)" srcset="/photography/images/EconFreedom_4720OS_041818_cc.jpg">
+        <source media="(max-width:499px)" srcset="/photography/images/EconFreedom_4720OS_041818_cc-2.jpg">
+        <img src="/photography/images/EconFreedom_4720OS_041818_cc-2.jpg" style="width:100%">
+    </picture>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <picture>
+        <source media="(min-width:500px)" srcset="/photography/images/PHP_Shoot_OS7212.jpg">
+        <source media="(max-width:499px)" srcset="/photography/images/PHP_Shoot_OS7212-2.jpg">
+        <img src="/photography/images/PHP_Shoot_OS7212-2.jpg" style="width:100%">
+    </picture>
+  </div>
+    
+  
+
+  <!-- The Portfolio Section -->
+  <div class="w3-white bkgrndTexture" id="portfolio">
+    <div class="trnsprnt-light-violet" style="padding:10px">
+		<h1 class="quote">"We take photographs as a return ticket to a moment otherwise gone" 
+			<br>- Katie Thurmes</h1>
+    </div>
+    <div class="w3-container w3-content" style="max-width:1200px">
+    <div class="w3-row w3-row-padding w3-padding-16-nobottom" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <a href="/photography/portfolio/engagements-and-elopements.html"><img src="/photography/images/covers/Engagements-n-Elopements-cover.jpg" alt="Engagements and elopements portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+		<div class="w3-third w3-margin-bottom">
+		  <a href="/photography/portfolio/maternity-and-families.html"><img src="/photography/images/covers/Maternity-n-Families-cover.jpg" alt="Maternity and families portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="/photography/portfolio/portraits-and-lifestyle.html"><img src="/photography/images/covers/Portraits-n-Lifestyle-cover.jpg" alt="Portraits and lifestyle portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+		<div class="w3-third w3-margin-bottom">
+          <a href="/photography/portfolio/commercial-and-editorial.html"><img src="/photography/images/covers/Commercial-n-Editorial-cover.jpg" alt="Commercial and editorial portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+		<div class="w3-third w3-margin-bottom">
+          <a href="/photography/portfolio/events.html"><img src="/photography/images/covers/Events-cover.jpg" alt="Events portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+		<div class="w3-third w3-margin-bottom">
+          <a href="/photography/portfolio/travel.html"><img src="/photography/images/covers/Travel-cover.jpg" alt="Travel portfolio cover image" style="width:100%" class="w3-hover-opacity"></a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>  
+<!-- End Page Content -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center w3-opacity bkgrndTexture light-grey w3-xlarge">
+  <p class="w3-medium">&#169; Copyright 2019 Olga Sago Photography<br>website design by Olga Sago</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500); 
+
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
