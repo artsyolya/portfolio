@@ -17,8 +17,6 @@ h2 {
 footer {
 	margin-bottom:0;
 }
-
-
 .logo-top {
 	font-family:'Fredericka the Great';
 	font-size:30px;
@@ -58,7 +56,10 @@ footer {
 	margin-left:auto;
 	margin-right:auto;
 	}
-
+.bottom-contact{
+    margin:0;
+    padding:17px;
+}
 .light-grey {
 	background-color:#e6e6e6;
 	}
