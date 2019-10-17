@@ -17,6 +17,12 @@ h2 {
 footer {
 	margin-bottom:0;
 }
+.logo {
+    font-family:'Fredericka the Great';
+	font-size:40px;
+	margin-top:5px;
+    margin-bottom: 0;
+}
 .logo-top {
 	font-family:'Fredericka the Great';
 	font-size:30px;
