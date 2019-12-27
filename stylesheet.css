@@ -8,14 +8,15 @@ p, pre, h5 {
 h1 {
 	margin-bottom:0;
 }
-h2 {
+/*h2 {
   font-family:'Great Vibes', Helvetica, sans-serif;
   font-size: 35px;
   color: #000;
   margin-top:-10px;
-}
+}*/
 footer {
 	margin-bottom:0;
+	color: #000;
 }
 .logo {
     font-family:'Fredericka the Great';
@@ -44,9 +45,13 @@ footer {
 .portfolioText {
 	text-align: center;
 	font-family: 'Fredericka the Great';
-	font-weight:bold;
-	font-size: 30px;
+	
+	font-size: 45px;
 	}
+.aboutText {
+	font-family: 'Bad Script', cursive;
+	font-size: 25px;
+}
 .quote {
     font-family:'Shadows Into Light',cursive;
     font-size:35px;
