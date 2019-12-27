@@ -1,0 +1,1 @@
+document.write('<center><p>&#169 2019 Olga Sago</p></center>')
