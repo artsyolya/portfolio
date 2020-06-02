@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Olga Sago | Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3stylesheet.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .home-gif {
+        width:75%;
+        display:block;
+        margin:auto;
+    }
+    @media (max-width: 499px){ 
+        .mobile-home{height:560px}
+        .home-gif {width:100%;
+    }
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+	<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
+	   <a href="#" style="text-decoration:none">
+	   <h3 class="logo">Olga Sago</h3>
+	   </a>
+    	</div>
+		
+    <a class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
+    <a href="http://instagram.com/olgas.photos/" target="_blank"><em class="fa fa-instagram w3-hover-opacity w3-padding-16-24 w3-xlarge w3-right w3-hide-small"></em></a>
+    <a href="https://www.linkedin.com/in/olga-sago/" target="_blank"><em class="fa fa-linkedin-square w3-hover-opacity linkedin-padding w3-xlarge w3-right w3-hide-small"></em></a> 	
+    
+    <a href="contact.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">Contact Me</a>
+    <a href="portfolio.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">Portfolio</a>
+    <a href="resume.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">My Resume</a>
+    <a href="about.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">About Me</a>
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-right" style="margin-top:73px">
+  <a href="index.html" class="menu-txt w3-bar-item w3-button w3-center text-fuscia" onclick="myFunction()">Home</a>
+  <a href="about.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">About Me</a>
+  <a href="resume.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">My Resume</a>
+  <a href="portfolio.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">Portfolio</a>
+  <a href="contact.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">Contact Me</a>
+  <div class="w3-center">
+	<a href="http://www.linkedin.com/in/olga-sago/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge"></i></a>
+	<a href="http://instagram.com/olga.s.photos/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a>
+  </div>	
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:3000px;margin-top:76px"> <!-- margin-top:73px -->
+
+  <!-- The Portfolio Section -->
+  <div class="bkgrndTexture mobile-home" id="portfolio" style="background-color:#bdeeec">
+      
+    <div class="w3-content" style="max-width:2000px">
+        <img src="graphics/cover-gif4.gif" class="home-gif">
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-8 w3-opacity bkgrndTexture light-grey w3-xlarge">
+  <script language="javascript" type="text/javascript" src="footer.txt"></script>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
