@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Olga Sago | Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1 {
+            font-family: 'Josefin Slab', serif;
+            text-align: center;
+            font-size: 54px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 35px;
+        }
+        h5 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 33px;
+        }
+        h6 {
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+        h7 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 28px;
+        }
+        li {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 23px;
+        }
+        .left-column {
+            text-align: right;
+            border-right: 5px solid grey;
+            padding-right: 20px;
+        }
+        .right-column {
+            padding-left: 20px;
+        }
+        .box-left {
+            width:50%;
+            display: block; 
+            margin-right: auto;
+        }
+        .box-right {
+            width:50%;
+            display: block; 
+            margin-left: auto;
+        }
+        ul {
+            list-style-type: circle;
+            padding-right: 20px;
+            margin: 0;
+        }
+        .company-button1 {
+            border: 4px solid #d8345d;
+            border-radius: 15px;
+            font-family: 'Fredericka the Great';
+            text-align: center;
+            font-size: 28px;
+            color: dimgray;
+            width: 275px;
+            margin: auto;
+        }
+        .company-button2 {
+            border: 4px solid #4b7190;
+            border-radius: 15px;
+            font-family: 'Fredericka the Great';
+            text-align: center;
+            font-size: 28px;
+            color:dimgray;
+            width: 275px;
+            margin: auto;
+        }
+        .company-button3 {
+            border: 4px solid #628964;
+            border-radius: 15px;
+            font-family: 'Fredericka the Great';
+            text-align: center;
+            font-size: 28px;
+            color:dimgray;
+            width: 275px;
+            margin: auto;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        @media (max-width: 499px){
+            h5 {font-size: 15px}
+            h6, h7 {font-size: 20px}
+            li {font-size: 18px}
+            .box-left {width:100%}
+            .box-right {width:100%}
+            .left-column {padding-right: 18px}
+            .right-column {padding-left: 18px}
+            .company-button1,.company-button2,.company-button3 
+                {font-size:20px; width:195px;}
+        }
+    </style>    
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+	<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
+		<a href="index.html" style="text-decoration:none">
+		<h3 class="logo">Olga Sago</h3>
+		</a>
+    	</div>
+	
+    <a class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
+    <a href="http://instagram.com/olgas.photos/" target="_blank"><em class="fa fa-instagram w3-hover-opacity w3-padding-16-24 w3-xlarge w3-right w3-hide-small"></em></a>
+    <a href="https://www.linkedin.com/in/olga-sago/" target="_blank"><em class="fa fa-linkedin-square w3-hover-opacity linkedin-padding w3-xlarge w3-right w3-hide-small"></em></a> 	
+    
+    <a href="contact.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">Contact Me</a>
+    <a href="portfolio.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">Portfolio</a>
+    <a href="#" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right text-fuscia">My Resume</a>
+    <a href="about.html" class="menu-txt w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right">About Me</a>
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-right" style="margin-top:73px">
+  <a href="index.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">Home</a>
+  <a href="about.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">About Me</a>
+  <a href="#" class="menu-txt w3-bar-item w3-button w3-center text-fuscia" onclick="myFunction()">My Resume</a>
+  <a href="portfolio.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">Portfolio</a>
+  <a href="contact.html" class="menu-txt w3-bar-item w3-button w3-center" onclick="myFunction()">Contact Me</a>
+  <div class="w3-center">
+	<a href="http://www.linkedin.com/in/olga-sago/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity w3-xlarge"></i></a>
+	<a href="http://instagram.com/olga.s.photos/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a>
+  </div>	
+</div>
+
+<!-- Page content -->
+<div class="w3-content bkgrndTexture" style="max-width:3000px;margin-top:73px">
+<div class="w3-white" style="max-width:95%;margin:auto">
+  <!-- Resume Content Section -->
+  <div class="w3-content w3-white" id="portfolio">
+    <!-- <div class="w3-container w3-content" style="max-width:1000px">
+       <img src="images/My-Resume.jpg"  style="width:100%">
+    </div> -->
+      <br><br>
+      <h1>Skills</h1>
+      <div class="w3-row">
+          <div class="w3-half left-column">
+            <h5>Digital Marketing<br>Media relations<br>Social media marketing<br>Website content management<br>
+                AP Style writing<br>Content graphics and writing
+            </h5>
+          </div>
+          <div class="w3-half right-column">
+            <h5>Analytical & Creative Problem Solving<br>Website Design, HTML, CSS<br>
+                Portraits & Lifestyle Photography<br>Event & Editorial Photography<br>
+                Lightroom, Photoshop, Canva<br>Research & MS Suite
+            </h5>
+          </div>
+      </div>
+      <br><br><br><br><br><br>
+      
+      <h1>Experience</h1>
+      <br>
+      <!-- MSU Denver Job Experience -->
+      <img class="box-right" src="graphics/media-relations-assistant-box.png">
+      <div class="w3-row">
+          <div class="w3-half-2">
+            <img src="graphics/msu-denver-marketing-dept.jpg" style="width:70%;display:block;
+                margin:auto;">
+          </div>
+          <div class="w3-half-2" style="padding-left:40px">
+              <h6>Strategy, Marketing & Communications<br>Mar. 2018 - Present</h6>
+              <ul>
+                  <li>Write and update content for the Experts Guide website</li>
+                  <li>Pull news segments with mentions of MSU Denver faculty, students and programs</li>
+                  <li>Prepare media advisories and media pitches</li>
+                  <li>Write promotional articles for The Denver Post’s YourHub and MSU Denver’s online publications RED and Early Bird</li>
+                  <li>Help coordinate interviews with media and MSU Denver faculty</li>
+                  <li>Develop social media posts for MSU Denver's Instagram and Twitter accounts</li>
+                  <li>Take editorial, event and portrait photos for articles, marketing, website and stock use</li>
+              </ul>
+          </div>
+      </div>
+      <br>
+      <div class="company-button1">
+          <a href="https://www.msudenver.edu/marcom/" target="_blank">Company Website</a>
+      </div>
+      <br><br>
+      <!-- DPL Job Experience -->
+      <img class="box-left" src="graphics/DPL-oncall.png">
+      <div class="w3-row">
+          <div class="w3-half-2" style="padding-left:40px">
+              <h6>Denver Public Library Circulation Desk<br>Aug. 2018 - Present</h6>
+              <ul>
+                  <li>Assist library patrons with setting up and updating their library accounts, as well as checking items in and out for them</li>
+                  <li>Process coming in and going out library items</li>
+                  <li>Help find library items for patrons</li>
+                  <li>Provide assistance with using computers and programs like MS Office, Chrome and printing</li>
+              </ul>
+          </div>
+          <div class="w3-half-2">
+            <img src="graphics/dpl-logo.jpg" style="width:80%;display:block;margin:auto">
+          </div>
+      </div>
+      <div class="company-button2">
+          <a href="https://www.denverlibrary.org" target="_blank">Company Website</a>
+      </div>
+      <br><br>
+      <!-- Datanet Job Experience -->
+      <img class="box-right" src="graphics/intern-developer-box.png">
+      <div class="w3-row">
+          <div class="w3-half-2">
+            <img src="graphics/datanet-logo.jpg" style="width:70%;display:block;
+                margin:auto">
+          </div>
+          <div class="w3-half-2" style="padding-left:40px">
+              <h6>DataNet, Inc.<br>Jan. 2015 - Feb 2018</h6>
+              <ul>
+                  <li>Executed basic developments for software enhancements and configurations using SQL, JavaScript and CSS</li>
+                  <li>Performed database work involving data loads, creating reports and fixing programming bugs</li>
+              </ul>
+          </div>
+      </div>
+      <br>
+      <div class="company-button3">
+          <a href="https://datanet.com/" target="_blank">Company Website</a>
+      </div>
+      <br><br><br><br><br><br>
+      
+      <h1>Education</h1>
+      <br>
+      <img class="box-left" src="graphics/bs-marketing-box.png">
+      <div class="w3-row">
+          <div class="w3-half-2" style="padding-left:40px">
+              <h6>Graduated May 2020, magna cum laude</h6>
+              
+              <h7><strong>Relevant Coursework & Academic Projects:</strong><br>
+              <h7>Digital Marketing</h7>
+              <ul>
+                  <li>Developed a group digital marketing campaign for an Apprentorship with Be Bottle</li>
+                  <li>Obtained necessary skills and several certifications for entering the digital marketing field</li>
+              </ul>
+              <h7>Social Media Management</h7>
+              <ul>
+                  <li>Developed a group social media marketing plan to for MSU Denver Alumni Association to help promote the annual fundraising event Roadrunner Tuesday</li>
+              </ul>
+              <h7>Advertisement Management</h7>
+              <ul>
+                  <li>Developed a group advertising campaign plan for H&M</li>
+              </ul>
+              <h7>Multicultural Marketing</h7>
+              <ul>
+                  <li>Developed a group multicultural marketing plan for Nocturne Jazz and Supper Club</li>
+              </ul>
+              <h7><strong>Student Org. Involvement</strong></h7>
+              <ul>
+                  <li>Treasurer officer of Beta Gamma Sigma MSU Denver Chapter</li>
+              </ul>
+              <h7><strong>Awards</strong></h7>
+              <ul>
+                  <li>Provost Honor Roll (Fall 2019)</li>
+                  <li>College of Business Dean's Academic Achievement Award (Spring 2019)</li>
+                  <li>Roadways Honor Roll (Spring 2019)</li>
+              </ul>
+          </div>
+          <div class="w3-half-2">
+            <img src="graphics/msu-denver-business.jpg" style="width:100%;display:block;
+                margin:auto">
+          </div>
+      </div>
+      <br>
+          
+      <img class="box-right" src="graphics/certifications-box.png">
+      <div class="w3-row">
+          <div class="w3-half-2">
+              <h6></h6>
+          </div>
+          <div class="w3-half-2" style="padding-left:40px">
+              <h7><strong>GreenFig - Digital Marketing Science</strong></h7>
+              <ul>
+                  <li>Since April 2020</li>
+              </ul>
+              <h7><strong>Google Analytics Individual Qualification</strong></h7>
+              <ul>
+                  <li>Since April 2020</li>
+              </ul>
+              <h7><strong>Google Ads Search</strong></h7>
+              <ul>
+                  <li>Since April 2020</li>
+              </ul>
+              <h7><strong>HubSpot Email Marketing</strong></h7>
+              <ul>
+                  <li>Since April 2020</li>
+              </ul>
+              <h7><strong>Hootsuite Platform</strong></h7>
+              <ul>
+                  <li>Since November 2019</li>
+              </ul>
+          </div>
+      </div>
+      <br><br>
+      
+      <img class="box-left" src="graphics/aa-degree-box.png">
+      <div class="w3-row">
+          <div class="w3-half-2" style="padding-left:40px">
+              <h6>Graduated July 2014 with a 3.51 GPA</h6>
+          </div>
+          <div class="w3-half-2">
+            <img src="graphics/rrcc-logo.png" style="width:70%;display:block;
+                margin:auto;margin-top:-10px">
+          </div>
+      </div>
+      <br><br><br>      
+  </div>
+  
+<!-- End Page Content -->
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer-txt w3-container w3-padding-8 w3-opacity bkgrndTexture light-grey w3-xlarge">
+  <script language="javascript" type="text/javascript" src="footer.txt"></script>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
