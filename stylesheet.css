@@ -317,8 +317,8 @@ footer { margin-bottom:0; color: #000; }
 	font-size: 12px; 
         width: 300px;
         text-align: right;
-        margin-left: 20px;
-        padding: 0 10px 0 10px;
+        margin-left: 0px;
+        padding: 0 22px 0 10px;
     }
     .p-left { 
 	text-align: left; 
