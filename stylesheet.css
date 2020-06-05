@@ -309,7 +309,7 @@ footer { margin-bottom:0; color: #000; }
     }
     .h2-left { 
         text-align: right; 
-        margin-left: 50px; 
+        margin-left: 30px; 
         padding-right: 10px; 
     }
     .h2-left2 { margin-left: 30px; text-align: left; }
@@ -322,7 +322,7 @@ footer { margin-bottom:0; color: #000; }
     }
     .p-left { 
 	text-align: left; 
-        margin-left: 30px; 
+        margin-left: 60px; 
         padding: 0 10px 0 10px;
         font-size: 12px;
         float: none;
@@ -338,7 +338,7 @@ footer { margin-bottom:0; color: #000; }
     }
     .source-txt-left, .source-txt-right { font-size: 9px; }
     .relative-right { margin-top: 0px; }
-    .relative-left { margin-top: 0px; margin-right: 32px; }
+    .relative-left { margin-top: 0px; margin-right: 52px; }
     .relative-left2 { margin-top: 152px; }
     .relative-left4 { margin-top: 135px; margin-left: 0px; }
     .relative-right2 { margin-top: 210px; margin-left: 20px; }
