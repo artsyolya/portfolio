@@ -292,6 +292,37 @@ footer { margin-bottom:0; color: #000; }
     margin: auto;
 }
 
+@media (max-width: 360px) {
+    .h2-2 { width:300px; font-size:21px; margin-left:5%; }
+    .h2-left { text-align:right; margin-left:5%; padding-right:10px; }
+    .h2-left2 { margin-left: 4%; text-align: left; }
+    .h2-right { text-align:right; margin-left:2%; padding-left:10px; }
+    .relative-left { margin-top:0px; margin-right:5%; }
+    .p-right {
+        font-size: 12px;
+        width: 300px;
+        text-align: right;
+        margin-left: 0%;
+        padding: 0 22px 0 10px;
+    }
+    .p-left {
+        text-align: left;
+        margin-left: 14%;
+        padding: 0 15px 0 10px;
+        float: none;
+        font-size: 12px;
+        width: 300px;
+    }
+    .p-left2 {
+        text-align: left;
+        float: left;
+        margin-left: 4%;
+        font-size: 10px;
+        width: 300px;
+    }
+    .relative-right { margin-top: 0px; margin-left: 5%; }   
+}
+
 @media (max-width: 499px) {
     .top-heading { margin-top: 50px; }
     .heading {
