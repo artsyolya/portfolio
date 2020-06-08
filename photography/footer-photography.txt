@@ -1,0 +1,1 @@
+document.write('<center><p>&#169; Copyright 2020 Olga Sago Photography<br>Website design by <a href="www.olgasago.com" target="_blank">Olga Sago</a></p></center>')
