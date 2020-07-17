@@ -32,6 +32,7 @@ footer { margin-bottom:0; color: #000; }
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
 }
+.content-margin { margin-top:73px; }
 .portfolioText {
 	text-align: center;
 	font-family: 'Fredericka the Great';	
