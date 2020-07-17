@@ -108,7 +108,18 @@ footer { margin-bottom:0; color: #000; }
 
 }
 .photos-img { width: 100%!important; }
+
+@media (min-width: 870px){
+  .contentStart { margin-top: 73px; }
+}
+@media (max-width: 768px){
+    .content-margin { margin-top:140px; }
+}
+@media (min-width: 601px){
+  .insta-padding { padding: 24px 20px; }
+}
 @media (max-width: 499px) {
+    .content-margin { margin-top:80px; }
     .photos {
         -moz-column-count:    1;
         -webkit-column-count: 1;
@@ -118,12 +129,6 @@ footer { margin-bottom:0; color: #000; }
     .contentStart { margin-top: 80px; }
     .portfolioText { font-size: 35px; }
     .aboutText { font-size: 16px; }
-}
-@media (min-width: 601px){
-  .insta-padding { padding: 24px 20px; }
-}
-@media (min-width: 870px){
-  .contentStart { margin-top: 73px; }
 }
 
 /* Portfolio page styling */
