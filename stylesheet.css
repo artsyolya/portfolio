@@ -32,6 +32,7 @@ footer { margin-bottom:0; color: #000; }
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
 }
+.menu-padding { padding: 24px!important; }
 .content-margin { margin-top:73px; }
 .portfolioText {
 	text-align: center;
@@ -111,10 +112,13 @@ footer { margin-bottom:0; color: #000; }
 .photos-img { width: 100%!important; }
 
 @media (min-width: 870px){
-  .contentStart { margin-top: 73px; }
+    .linkedin-padding { padding: 24px 10px 24px 40px; }
+    .contentStart { margin-top: 73px; }
 }
 @media (max-width: 768px){
-    .content-margin { margin-top:140px; }
+    .menu-padding { padding: 24px 12px 24px 12px!important; }
+    .linkedin-padding { padding: 24px 10px 24px 12px; }
+    /* .content-margin { margin-top:140px; } */
 }
 @media (min-width: 601px){
   .insta-padding { padding: 24px 20px; }
