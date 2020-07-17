@@ -4,7 +4,7 @@ Welcome to the repository for my professinoal portfolio website and an extension
 
 On the main website, you will find the following pages:
   - About Me
-  - My Resume
+  - Resume
   - Portfolio
   - Contact Me
   - LinkedIn icon link to my professional LinkedIn page
