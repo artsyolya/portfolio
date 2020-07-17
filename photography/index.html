@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Olga Sago Photography</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Offering services in portrait, couple, engagement, elopement, maternity, new born, family, lifestyle and event photography.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Olga Sago Photography">
-<meta property="og:description" content="Offering services in portrait, couple, engagement, elopement, maternity, new born, family, lifestyle and event photography.">
-<meta property="og:image" content="https://www.olgasago.com/photography/images/elopements/DSC_1885.2.jpg">
-<link rel="icon" href="images/PNGs/camera-icon-tab.png">
-<link rel="stylesheet" href="../w3stylesheet.css">
-<link rel="stylesheet" href="../stylesheet.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<head>
+	<title>Olga Sago Photography</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Offering services in portrait, couple, engagement, elopement, maternity, new born, family, lifestyle and event photography.">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Olga Sago Photography">
+	<meta property="og:description" content="Offering services in portrait, couple, engagement, elopement, maternity, new born, family, lifestyle and event photography.">
+	<meta property="og:image" content="https://www.olgasago.com/photography/images/elopements/DSC_1885.2.jpg">
+	<link rel="icon" href="images/PNGs/camera-icon-tab.png">
+	<link rel="stylesheet" href="../w3stylesheet.css">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.mySlides { width:80%; margin-left:auto; margin-right:auto; }
+		
+		/* The dots/bullets/indicators */
+		.dot-indicators { margin-top:5px; }
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		.active { background-color:#717171; }
+		
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 2s;
+		  animation-name: fade;
+		  animation-duration: 2s;
+		}
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		@media (max-width: 1366px){
+		    .mySlides { width:100%; }
+		}
+    	</style>
+</head>
 <body>
 
 <!-- Navbar -->
@@ -67,54 +103,66 @@
 <div class="w3-content contentStart" style="max-width:3000px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <div>
+  <div class="mySlides fade w3-display-container w3-center">
       <picture>
           <source media="(min-width:500px)" srcset="images/ClendeninMaternity_180701_0666OS.jpg">
           <source media="(max-width:499px)" srcset="images/ClendeninMaternity_180701_0666OS-2.jpg">
           <img src="images/ClendeninMaternity_180701_0666OS-2.jpg" style="width:100%">
       </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/EconFreedom_4720OS_041818_cc.jpg">
         <source media="(max-width:499px)" srcset="images/EconFreedom_4720OS_041818_cc-2.jpg">
         <img src="images/EconFreedom_4720OS_041818_cc-2.jpg" style="width:100%">
     </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/events/RiseAgainst_RedRocks_180915_2292OS.jpg">
         <source media="(max-width:499px)" srcset="images/RiseAgainst_RedRocks_180915_2292OS-2.jpg">
         <img src="images/RiseAgainst_RedRocks_180915_2292OS-2.jpg" style="width:100%">
     </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/elopements/DSC_1885.2.jpg">
         <source media="(max-width:499px)" srcset="images/DSC_1885.2-2.jpg">
         <img src="images/DSC_1885.2-2.jpg" style="width:100%">
     </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/PHP_Shoot_OS7212.jpg">
         <source media="(max-width:499px)" srcset="images/PHP_Shoot_OS7212-2.jpg">
         <img src="images/PHP_Shoot_OS7212-2.jpg" style="width:100%">
     </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/events/FallCommencement_2861OS_181214_cc.jpg">
         <source media="(max-width:499px)" srcset="images/FallCommencement_2861OS_181214_cc-2.jpg">
         <img src="images/FallCommencement_2861OS_181214_cc-2.jpg" style="width:100%">
     </picture>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides fade w3-display-container w3-center">
     <picture>
         <source media="(min-width:500px)" srcset="images/nature/HorsetoothMtn_1554OS_190811_cc.jpg">
         <source media="(max-width:499px)" srcset="images/HorsetoothMtn_1554OS_190811_cc-2.jpg">
         <img src="images/HorsetoothMtn_1554OS_190811_cc-2.jpg" style="width:100%">
     </picture>
+  </div>
+
+  <div class="dot-indicators" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span> 
+  </div>
   </div>
 
   <!-- The Portfolio Section -->
@@ -156,24 +204,125 @@
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+//automated slideshow with indicators
+var slideIndex = 1;
+var myTimer;
+var slideshowContainer;
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
 
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2700); 
-
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
 }
 
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
