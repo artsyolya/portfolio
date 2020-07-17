@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Olga Sago - Creative Digital Marketer & Designer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography.">
-<meta property="og:type" content="website"> 
-<meta property="og:title" content="Olga Sago - Creative Digital Marketer & Designer">
-<meta property="og:description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography.">
-<meta property="og:image" content="https://www.olgasago.com/graphics/os-icon.jpg">
-<link rel="icon" href="graphics/os-icon.png">
-<link rel="stylesheet" href="w3stylesheet.css">
-<link rel="stylesheet" href="stylesheet.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    .selfie-img {
-        width: 125%;
-        position: relative;
-        animation-name: selfie;
-        animation-duration: 3s;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes selfie {
-      from {left: -500px;}
-      to {left: 0%;}
-    }
-    .wine-box {
-        height: 458px;
-        width: 582px;
-        margin-top: 105px;
-        background: #7b0046;
-        position: relative;
-        animation-name: intro-box;
-        animation-duration: 3s;  
-        animation-fill-mode: backwards;
-    }
-    @keyframes intro-box {
-      from {left: 800px;}
-      to {left: -7%;}
-    }
-    h1 {
-        font-family:'Fredericka the Great';
-        font-size:40px;
-        padding:50px 40px 0 40px;
-        color: white;
-    }
-    .home-gif {
-        width:75%;
-        display:block;
-        margin:auto;
-    }
-    @media (max-width: 1024px){
-        .wine-box { height:358px; width:482px; margin-top:130px; }
-        h1 { font-size: 30px; }
-    }
-    @media (max-width: 768px){
-        .wine-box { width:360px; margin-top:50px; }
-        h1 { font-size: 25px; }
-    }
-    @media (max-width: 499px){ 
-        .mobile-home{ height:560px; }
-	.home-gif { width:100%; }
-	.selfie-img { width: 80%; }
-        @keyframes selfie {
-            from {left: -300px;}
-            to {left: 20%;}
-        }
-        .wine-box { height: 218px; width: 300px; margin-top: -30px; }
-        @keyframes intro-box {
-          from {left: 300px;}
-          to {left: -2%;}
-        }
-        h1 { font-size: 20px; padding: 30px 20px 0 20px; }
-    }
-</style>
+<head>
+	<title>Olga Sago - Creative Digital Marketer & Designer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography.">
+	<meta property="og:type" content="website"> 
+	<meta property="og:title" content="Olga Sago - Creative Digital Marketer & Designer">
+	<meta property="og:description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography.">
+	<meta property="og:image" content="https://www.olgasago.com/graphics/os-icon.jpg">
+	<link rel="icon" href="graphics/os-icon.png">
+	<link rel="stylesheet" href="w3stylesheet.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="functions.js"></script>
+	<style>
+	    .selfie-img {
+		width: 125%;
+		position: relative;
+		animation-name: selfie;
+		animation-duration: 3s;  
+		animation-fill-mode: forwards;
+	    }
+	    @keyframes selfie {
+	      from {left: -500px;}
+	      to {left: 0%;}
+	    }
+	    .wine-box {
+		height: 458px;
+		width: 582px;
+		margin-top: 105px;
+		background: #7b0046;
+		position: relative;
+		animation-name: intro-box;
+		animation-duration: 3s;  
+		animation-fill-mode: backwards;
+	    }
+	    @keyframes intro-box {
+	      from {left: 800px;}
+	      to {left: -7%;}
+	    }
+	    h1 {
+		font-family:'Fredericka the Great';
+		font-size:40px;
+		padding:50px 40px 0 40px;
+		color: white;
+	    }
+	    .home-gif {
+		width:75%;
+		display:block;
+		margin:auto;
+	    }
+	    @media (max-width: 1024px){
+		.wine-box { height:358px; width:482px; margin-top:130px; }
+		h1 { font-size: 30px; }
+	    }
+	    @media (max-width: 768px){
+		.wine-box { width:360px; margin-top:50px; }
+		h1 { font-size: 25px; }
+	    }
+	    @media (max-width: 499px){ 
+		.mobile-home{ height:560px; }
+		.home-gif { width:100%; }
+		.selfie-img { width: 80%; }
+		@keyframes selfie {
+		    from {left: -300px;}
+		    to {left: 20%;}
+		}
+		.wine-box { height: 218px; width: 300px; margin-top: -30px; }
+		@keyframes intro-box {
+		  from {left: 300px;}
+		  to {left: -2%;}
+		}
+		h1 { font-size: 20px; padding: 30px 20px 0 20px; }
+	    }
+	</style>
+</head>
 
 <body>
 
@@ -146,85 +149,6 @@
 <footer class="w3-container w3-padding-8 w3-opacity bkgrndTexture light-grey w3-xlarge">
   <script language="javascript" type="text/javascript" src="footer.txt"></script>
 </footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-//typewriter text animation
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 5) || 1000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 160 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 4; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 1000;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #d184af }";
-  document.body.appendChild(css);
-};
-</script>
 
 </body>
 </html>
