@@ -10,7 +10,7 @@ On the main website, you will find the following pages:
   - LinkedIn icon link to my professional LinkedIn page
   - Instagram icon link to my photography Instagram page
 
-On the photography extension website, you will find the following pages:
+You may also find my archived photography extension website, within which you will find the following pages:
   - under Portfolio
       - Engagements & Elopements
       - Maternity & Families
