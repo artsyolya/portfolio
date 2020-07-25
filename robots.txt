@@ -1,2 +1,4 @@
 User-agent: *
+Disallow: /photography/
+Disallow: /contact-thank-you.html
 Sitemap: https://www.olgasago.com/sitemap.xml
