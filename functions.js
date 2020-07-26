@@ -9,7 +9,6 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
 /**************************************************** 
     When the user clicks anywhere outside of the modal, close it
 ****************************************************/
@@ -19,7 +18,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 /****************************************************
     Typewriter text animation
 ****************************************************/
@@ -32,7 +30,6 @@ var TxtRotate = function(el, toRotate, period) {
   this.tick();
   this.isDeleting = false;
 };
-
 TxtRotate.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
@@ -42,7 +39,6 @@ TxtRotate.prototype.tick = function() {
   } else {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
@@ -58,14 +54,11 @@ TxtRotate.prototype.tick = function() {
     this.loopNum++;
     delta = 1000;
   }
-
   setTimeout(function() {
     that.tick();
   }, delta);
 };
-
 window.onload = function() {
-  
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
@@ -80,4 +73,3 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #d184af }";
   document.body.appendChild(css);
 };
-
