@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^www.olgasago.com$
-RewriteRule (.*) https://www.olgasago.com/$1 [L,R=301]
