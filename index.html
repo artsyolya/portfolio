@@ -27,68 +27,71 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="functions.js"></script>
 	<style>
-	    .selfie-img {
-		width: 125%;
-		position: relative;
-		animation-name: selfie;
-		animation-duration: 3s;  
-		animation-fill-mode: forwards;
+		h2 {
+		    font-family: 'Josefin Slab', serif;
+		    font-size: 35px;
+			font-weight: 300;
+			color: white;
+			padding: 50px;
+		}
+		.selfie-img {
+			width: 125%;
+			position: relative;
+			animation-name: selfie;
+			animation-duration: 3s;  
+			animation-fill-mode: forwards;
 	    }
 	    @keyframes selfie {
 	      from {left: -500px;}
 	      to {left: 0%;}
 	    }
 	    .wine-box {
-		height: 458px;
-		width: 582px;
-		margin-top: 105px;
-		background: #7b0046;
-		position: relative;
-		animation-name: intro-box;
-		animation-duration: 3s;  
-		animation-fill-mode: backwards;
+			height: 458px;
+			width: 582px;
+			margin-top: 105px;
+			background: #7b0046;
+			position: relative;
+			animation-name: intro-box;
+			animation-duration: 3s;  
+			animation-fill-mode: backwards;
 	    }
 	    @keyframes intro-box {
 	      from {left: 800px;}
 	      to {left: -7%;}
 	    }
-	    h1 {
-		font-family:'Fredericka the Great';
-		font-size:40px;
-		padding:50px 40px 0 40px;
-		color: white;
-	    }
 	    .home-gif {
-		width:75%;
-		display:block;
-		margin:auto;
+			width:75%;
+			display:block;
+			margin:auto;
 	    }
-	    @media (max-width: 1024px){
-		.wine-box { height:358px; width:482px; margin-top:130px; }
-		h1 { font-size: 30px; }
-	    }
-	    @media (max-width: 768px){
-		.wine-box { width:360px; margin-top:50px; }
-		h1 { font-size: 25px; }
-	    }
-	    @media (max-width: 499px){ 
-		.mobile-home{ height:560px; }
-		.home-gif { width:100%; }
-		.selfie-img { width: 80%; }
-		@keyframes selfie {
-		    from {left: -300px;}
-		    to {left: 20%;}
-		}
-		.wine-box { height: 218px; width: 300px; margin-top: -30px; }
 		@keyframes intro-box {
 		  from {left: 300px;}
 		  to {left: -2%;}
 		}
-		h1 { font-size: 20px; padding: 30px 20px 0 20px; }
+		
+		@media (max-width: 1024px){
+			.wine-box { height:358px; width:482px; margin-top:130px; }
+			h2 { font-size: 30px; }
 	    }
+	    @media (max-width: 768px){
+			.wine-box { width:360px; margin-top:50px; }
+			h2 { font-size: 25px; }
+	    }
+	    @media (max-width: 499px){ 
+			.mobile-home{ height:560px; }
+			.wine-box { height: 218px; width: 300px; margin-top: -30px; }
+			h2 { font-size: 20px; padding: 30px 20px 0 20px; }
+			.home-gif { width:100%; }
+			.selfie-img { width: 80%; }
+			@keyframes selfie {
+				from {left: -300px;}
+				to {left: 20%;}
+			}
+		}
 	</style>
 </head>
 
@@ -140,13 +143,13 @@
             	</div>
             	<div class="w3-half-2">
                 	<div class="wine-box">
-			<h1>
+			<h2>
 			    <span
 			     class="txt-rotate"
 			     data-period="1000"
-			     data-rotate='[ "","", "", "Greetings! My name is Olga Sago.", "I am a detail-oriented, analytical, tech-savvy and creative problem solving marketing professional.", "I have experience in media relations, website management, content development, social media, photography, web design and digital marketing." ]'>
+			     data-rotate='[ "","", "", "Greetings! My name is Olga Sago.", "I am a detail-oriented, analytical, tech-savvy and creative problem solving marketing professional.", "I am skilled in digital marketing, media relations, content development, web design, email development, analytics, and photography." ]'>
 			    </span>
-			</h1>
+			</h2>
                		</div>
             	</div>
         </div>
