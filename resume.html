@@ -27,37 +27,85 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="functions.js"></script>
 	<style>
-		h1 {
+		h2 {
 		    font-family: 'Josefin Slab', serif;
 		    text-align: center;
 		    font-size: 54px;
+            font-weight: 600;
 		    text-transform: uppercase;
 		}
-		h2 {
-		    font-family: 'Open Sans Condensed', sans-serif;
-		    font-size: 35px;
-		}
-		h5 {
-		    font-family: 'Open Sans Condensed', sans-serif;
-		    font-size: 33px;
-		}
-		h6 {
-		    font-family: 'Ibarra Real Nova', serif;
-		    font-size: 24px;
+        .h2-skills {
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        .msu-job-box, .dpl-job-box, .bs-edu-box, .aa-edu-box {
+            width: 535px;
+            height: 100px;
+            background-color: #7b0046;
+            margin-top: 80px;
+        }
+        .dev-job-box, .cert-edu-box {
+            width: 535px;
+            height: 60px;
+            background-color: #7b0046;
+            margin-top: 80px;
+        }
+        .box-shadow-l { box-shadow: 5px -10px #888888; }
+        .box-shadow-r { box-shadow: -5px 10px #888888; }
+        .h3-title {
+            font-family: 'Lato', sans-serif;
+		    font-size: 27px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: white;
+            padding: 10px 40px 0px 40px;
+        }
+        .title-left { text-align: right; }
+        .title-right { text-align: left; }
+        h4 {
+            font-family: 'Lato', sans-serif;
+		    font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        .company-dates, .accomplishments, .graduated {
+            font-family: 'Lato', sans-serif;
+		    font-size: 18px;
+            font-weight: 300;
 		    font-style: italic;
-		}
-		h7 {
-		    font-family: 'Open Sans Condensed', sans-serif;
-		    font-size: 28px;
-		}
+        }
+        
+        .job-details { padding-left: 40px; }
+        .courses {
+            font-family: 'Lato', sans-serif;
+		    font-size: 20px;
+            font-weight: 400;
+            margin: 5px 0 0 0;
+        }
+        .certs {
+            font-family: 'Lato', sans-serif;
+		    font-size: 22px;
+            font-weight: 500;
+            text-transform: none;
+        }
+        ul { list-style-type:circle; padding-right:20px; margin:0; }
 		li {
-		    font-family: 'Open Sans Condensed', sans-serif;
-		    font-size: 23px;
+		    font-family: 'Lato', sans-serif;
+		    font-size: 18px;
+            font-weight: 300;
 		}
+        .skills {
+            font-family: 'Lato', sans-serif;
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 200%;
+        }
 		.left-column {
 		    text-align: right;
 		    border-right: 5px solid grey;
@@ -66,54 +114,81 @@
 		.right-column { padding-left:20px; }
 		.box-left { width:50%; display:block; margin-right:auto; }
 		.box-right { width:50%; display:block; margin-left:auto; }
-		ul { list-style-type:circle; padding-right:20px; margin:0; }
-		.company-button1 {
-		    border: 4px solid #d8345d;
-		    border-radius: 15px;
+        .company-btn {
+		    border: none;
+            text-decoration: none;
+            border-radius: 15px;
 		    font-family: 'Fredericka the Great';
 		    text-align: center;
 		    font-size: 28px;
-		    color: dimgray;
+		    color: white;
 		    width: 275px;
-		    margin: auto;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
 		}
-		.company-button2 {
-		    border: 4px solid #4b7190;
-		    border-radius: 15px;
-		    font-family: 'Fredericka the Great';
-		    text-align: center;
-		    font-size: 28px;
-		    color:dimgray;
-		    width: 275px;
-		    margin: auto;
-		}
-		.company-button3 {
-		    border: 4px solid #628964;
-		    border-radius: 15px;
-		    font-family: 'Fredericka the Great';
-		    text-align: center;
-		    font-size: 28px;
-		    color:dimgray;
-		    width: 275px;
-		    margin: auto;
-		}
-		a:link { text-decoration:none; }
-		@media (max-width: 499px){
-		    h5 {font-size: 15px}
-		    h6, h7 {font-size: 20px}
-		    li {font-size: 18px}
+		.msu-color { background-color: #1b3c65; }
+        .dpl-color { background-color: #4b7190; }
+        .datanet-color { background-color: #0e62a6; }
+        a:link { text-decoration:none; }
+        @media (max-width: 599px){ /* mobile styling */
+            h2 {font-size: 40px}
+            .h2-skills { padding-top: 40px; }
+            .msu-job-box, .dpl-job-box, .bs-edu-box { height: 70px; margin-top: 40px; }
+            .aa-edu-box { height: 100px; margin-top: 40px; }
+            .dev-job-box, .cert-edu-box { height: 40px; margin-top: 40px; }
+            .box-shadow-l { box-shadow: 3px -5px #888888; }
+            .box-shadow-r { box-shadow: -3px 5px #888888; }
+            .h3-title { font-size: 20px; padding: 5px 20px 0px 20px }
+            h4 { font-size: 18px; }
+            .company-dates, .accomplishments, .graduated { font-size: 16px; }
+            .job-details { padding-left: 10px; }
+            .courses { font-size: 16px; }
+            .certs { font-size: 18px; }
+            li { font-size: 16px; }
+            .skills { font-size: 16px; }
+            .company-btn { font-size: 18px; width: 180px; height: 40px; }
+            .title-right { text-align: left; }
 		    .box-left {width:100%}
 		    .box-right {width:100%}
 		    .left-column {padding-right: 18px}
 		    .right-column {padding-left: 18px}
-		    .company-button1,.company-button2,.company-button3 
-			{font-size:20px; width:195px;}
 		}
+        @media (min-width: 600px) and (max-width: 749px){ /* tablet styling */
+            h2 {font-size: 45px}
+            .h2-skills { padding-top: 40px; }
+            .msu-job-box, .dpl-job-box, .bs-edu-box { height: 80px; margin-top: 40px; }
+            .aa-edu-box { height: 80px; margin-top: 40px; }
+            .dev-job-box, .cert-edu-box { height: 45px; margin-top: 40px; }
+            .box-shadow-l { box-shadow: 3px -5px #888888; }
+            .box-shadow-r { box-shadow: -3px 5px #888888; }
+            .h3-title { font-size: 22px; padding: 5px 20px 0px 20px }
+            h4 { font-size: 20px; }
+            .company-dates, .accomplishments, .graduated { font-size: 16px; }
+            .job-details { padding-left: 10px; }
+            .courses { font-size: 18px; }
+            .certs { font-size: 20px; }
+            li { font-size: 18px; }
+            .skills { font-size: 18px; }
+            .company-btn { font-size: 20px; width: 200px; height: 40px; }
+            .title-right { text-align: right; }
+		    .box-left, .box-right {width:50%}
+		    .left-column {padding-right: 18px; padding-bottom: 30px;}
+		    .right-column {padding-left: 18px; }
+		}
+        @media (min-width: 750px) and (max-width: 859px){ /* tablet styling */
+            .msu-job-box, .bs-edu-box { height: 80px; margin-top: 40px; }
+            .dpl-job-box { height: 75px; margin-top: 40px; }
+            .dev-job-box, .cert-edu-box { height: 45px; margin-top: 40px; }
+            .aa-edu-box { height: 110px; margin-top: 40px; }
+            .h3-title { font-size: 22px; padding: 5px 20px 0px 20px }
+        }
 	</style>    
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ********************************************************************************************
+        Top of page navigation bar
+************************************************************************************************* -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card">
 	<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
@@ -147,192 +222,227 @@
   </div>	
 </div>
 
-<!-- Page content -->
+<!-- ********************************************************************************************
+        Start of Page content 
+************************************************************************************************* -->
 <div class="w3-content bkgrndTexture content-margin" style="max-width:3000px">
 <div class="w3-white" style="max-width:95%;margin:auto">
-  <!-- Resume Content Section -->
-  <div class="w3-content w3-white" id="portfolio">
-    <!-- <div class="w3-container w3-content" style="max-width:1000px">
-       <img src="images/My-Resume.jpg"  style="width:100%">
-    </div> -->
-      <br><br>
-      <h1>Skills</h1>
-      <div class="w3-row">
-          <div class="w3-half left-column">
-            <h5>Digital Marketing<br>Social Media Management<br>Website Management<br>Content Development<br>Media Relations<br>
-                AP Style writing
-            </h5>
-          </div>
-          <div class="w3-half right-column">
-            <h5>Analytical & Creative Problem Solving<br>Website Design, HTML, CSS<br>
-                Adobe Creative Suite, Canva<br>
-                Portraits & Lifestyle Photography<br>Event & Editorial Photography<br>
-                Research & MS Suite
-            </h5>
-          </div>
-      </div>
-      <br><br><br><br><br><br>
-      
-      <h1>Experience</h1>
-      <br>
-      <!-- MSU Denver Job Experience -->
-      <img class="box-right" src="graphics/media-relations-assistant-box.png">
-      <div class="w3-row">
-          <div class="w3-half-2">
-            <img src="graphics/msu-denver-marketing-dept.jpg" style="width:70%;display:block;
-                margin:auto;">
-          </div>
-          <div class="w3-half-2" style="padding-left:40px">
-              <h6>Strategy, Marketing & Communications<br>Mar. 2018 - Aug. 2020</h6>
-              <ul>
-                  <li>Wrote and updated content for the Experts Guide website</li>
-                  <li>Pulled news segments related to MSU Denver for the website, e-newsletters, reports, and social media</li>
-                  <li>Prepared media advisories and media pitches</li>
-                  <li>Wrote promotional articles for various publications</li>
-                  <li>Helped coordinate interviews with media and MSU Denver faculty</li>
-                  <li>Developed social media content for MSU Denver's Instagram and Twitter accounts</li>
-		  <li>Improved SEO within the photography database PhotoShelter</li>
-                  <li>Took editorial, event and portrait photos for articles, marketing and website purposes</li>
-		  <li>Trained others on various media relations and design tools and processes</li>
-              </ul>
-          </div>
-      </div>
-      <br>
-      <div class="company-button1">
-          <a href="https://www.msudenver.edu/marcom/" target="_blank">Company Website</a>
-      </div>
-      <br><br>
-      <!-- DPL Job Experience -->
-      <img class="box-left" src="graphics/DPL-oncall.png">
-      <div class="w3-row">
-          <div class="w3-half-2" style="padding-left:40px">
-              <h6>Denver Public Library Circulation Desk<br>Aug. 2018 - Mar. 2020</h6>
-              <ul>
-                  <li>Assisted library patrons with setting up and updating their library accounts, as well as checking items in and out for them</li>
-                  <li>Processed coming in and going out library items</li>
-                  <li>Helped find library items for patrons</li>
-                  <li>Provided assistance with using computers and programs like MS Office, Chrome and printing</li>
-              </ul>
-          </div>
-          <div class="w3-half-2">
-            <img src="graphics/dpl-logo.jpg" style="width:80%;display:block;margin:auto">
-          </div>
-      </div>
-      <div class="company-button2">
-          <a href="https://www.denverlibrary.org" target="_blank">Company Website</a>
-      </div>
-      <br><br>
-      <!-- Datanet Job Experience -->
-      <img class="box-right" src="graphics/intern-developer-box.png">
-      <div class="w3-row">
-          <div class="w3-half-2">
-            <img src="graphics/datanet-logo.jpg" style="width:70%;display:block;
-                margin:auto">
-          </div>
-          <div class="w3-half-2" style="padding-left:40px">
-              <h6>DataNet, Inc.<br>Jan. 2015 - Feb 2018</h6>
-              <ul>
-                  <li>Executed basic developments for software enhancements and configurations using SQL, JavaScript and CSS</li>
-                  <li>Performed database work involving data loads, creating reports and fixing programming bugs</li>
-              </ul>
-          </div>
-      </div>
-      <br>
-      <div class="company-button3">
-          <a href="https://datanet.com/" target="_blank">Company Website</a>
-      </div>
-      <br><br><br><br><br><br>
-      
-      <h1>Education</h1>
-      <br>
-      <img class="box-left" src="graphics/bs-marketing-box.png">
-      <div class="w3-row">
-          <div class="w3-half-2" style="padding-left:40px">
-              <h6>Graduated May 2020, magna cum laude</h6>
-              
-              <h7><strong>Relevant Coursework & Academic Projects:</strong><br>
-              <h7>Digital Marketing</h7>
-              <ul>
-                  <li>Developed a group digital marketing campaign for an Apprentorship with Be Bottle</li>
-                  <li>Obtained necessary skills and several certifications for entering the digital marketing field</li>
-              </ul>
-              <h7>Social Media Management</h7>
-              <ul>
-                  <li>Developed a group social media marketing plan to for MSU Denver Alumni Association to help promote the annual fundraising event Roadrunner Tuesday</li>
-              </ul>
-              <h7>Advertisement Management</h7>
-              <ul>
-                  <li>Developed a group advertising campaign plan for H&M</li>
-              </ul>
-              <h7>Multicultural Marketing</h7>
-              <ul>
-                  <li>Developed a group multicultural marketing plan for Nocturne Jazz and Supper Club</li>
-              </ul>
-              <h7><strong>Student Org. Involvement</strong></h7>
-              <ul>
-                  <li>Treasurer officer of Beta Gamma Sigma MSU Denver Chapter</li>
-              </ul>
-              <h7><strong>Awards</strong></h7>
-              <ul>
-                  <li>Provost Honor Roll (Fall 2019)</li>
-                  <li>College of Business Dean's Academic Achievement Award (Spring 2019)</li>
-                  <li>Roadways Honor Roll (Spring 2019)</li>
-              </ul>
-          </div>
-          <div class="w3-half-2">
-            <img src="graphics/msu-denver-business.jpg" style="width:100%;display:block;
-                margin:auto">
-          </div>
-      </div>
-      <br>
-          
-      <img class="box-right" src="graphics/certifications-box.png">
-      <div class="w3-row">
-          <div class="w3-half-2">
-              <h6></h6>
-          </div>
-          <div class="w3-half-2" style="padding-left:40px">
-              <h7><strong>GreenFig - Digital Marketing Science</strong></h7>
-              <ul>
-                  <li>Since April 2020</li>
-              </ul>
-              <h7><strong>Google Analytics Individual Qualification</strong></h7>
-              <ul>
-                  <li>Since April 2020</li>
-              </ul>
-              <h7><strong>Google Ads Search</strong></h7>
-              <ul>
-                  <li>Since April 2020</li>
-              </ul>
-              <h7><strong>HubSpot Email Marketing</strong></h7>
-              <ul>
-                  <li>Since April 2020</li>
-              </ul>
-              <h7><strong>Hootsuite Platform</strong></h7>
-              <ul>
-                  <li>Since November 2019</li>
-              </ul>
-          </div>
-      </div>
-      <br><br>
-      
-      <img class="box-left" src="graphics/aa-degree-box.png">
-      <div class="w3-row">
-          <div class="w3-half-2" style="padding-left:40px">
-              <h6>Graduated July 2014 with a 3.51 GPA</h6>
-          </div>
-          <div class="w3-half-2">
-            <img src="graphics/rrcc-logo.png" style="width:70%;display:block;
-                margin:auto;margin-top:-10px">
-          </div>
-      </div>
-      <br><br><br>      
-  </div>
-  
-<!-- End Page Content -->
-</div>
-</div>
 
+    <!-- ********************************************************************************************
+            Resume Content Section 
+    ************************************************************************************************* -->
+    <div class="w3-content w3-white" id="portfolio">
+    <!-- <div class="w3-container w3-content" style="max-width:1000px">
+        <img src="images/My-Resume.jpg"  style="width:100%">
+    </div> -->
+
+    
+
+    <!-- ********************************************************************
+            Resume Section 1: Skills 
+    ************************************************************************ -->
+    <h2 class="h2-skills">Skills</h2>
+        <div class="w3-row">
+            <div class="w3-half left-column">
+            <p class="skills">Digital Marketing<br>Social Media Marketing<br>
+                Media Relations<br>Content & Graphics Development<br>
+                Website Content Management<br>
+                AP Style & Promotional Writing<br>Adobe Photoshop & Lightroom, Canva
+            </p>
+            </div>
+            <div class="w3-half right-column">
+            <p class="skills">Website Design & Email Development<br>HTML, CSS, JavaScript<br>
+                CMS: Wordpress, Wix<br>
+                Database Management, SQL<br>Portraits, Lifestyle, Event & Editorial Photography<br>
+                Research<br>MS Suite & G Suite
+            </p>
+            </div>
+        </div>
+        <div style="height:100px; width:100px;"></div>
+        
+        <!-- ********************************************************************
+                Resume Section 2: Experience 
+        ************************************************************************ -->
+        <h2>Experience</h2>
+        
+        <!-- MSU Denver Job Experience -->
+        <div class ="msu-job-box box-shadow-l box-right">
+            <h3 class="h3-title title-right">Media Relations Assistant<br>& Photographer</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2">
+                <img src="graphics/msu-denver-marketing-dept.jpg" alt="Metropolitan State University of Denver and top ranking Public Releations team" style="width:70%;display:block;
+                margin:auto;">
+            </div>
+            <div class="w3-half-2 job-details">
+                <p class="company-dates">Strategy, Marketing & Communications<br>Mar. 2018 - Aug. 2020</h6>
+                <ul>
+                    <li>Wrote and updated content for the Experts Guide website</li>
+                    <li>Pulled news segments related to MSU Denver for the website, e-newsletters, reports, and social media</li>
+                    <li>Prepared media advisories and media pitches</li>
+                    <li>Wrote promotional articles for various publications</li>
+                    <li>Helped coordinate interviews with media and MSU Denver faculty</li>
+                    <li>Developed social media content for MSU Denver's Instagram and Twitter accounts</li>
+                    <li>Improved SEO within the photography database PhotoShelter</li>
+                    <li>Took editorial, event and portrait photos for articles, marketing and website purposes</li>
+                    <li>Trained others on various media relations and design tools and processes</li>
+                </ul>
+                <p class="accomplishments"><strong>Key Accomplishments:</strong> Improved Experts Guide marketability, Promotional articles, Grew social media presence with content, Coordinated media interviews, Photos used for articles, website and marketing, and improved SEO within PhotoShelter</p>
+            </div>
+        </div>
+        <div class="center-btn">        
+            <button class="company-btn msu-color" onclick="window.open('https://www.msudenver.edu/marcom/')" type="button">Company Website</button>
+        </div>
+        <br><br>
+        
+        <!-- DPL Job Experience -->
+        <div class="dpl-job-box box-shadow-r box-left">
+            <h3 class="h3-title title-left">On-call Administrative Assistant II</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2  job-details">
+                <p class="company-dates">Denver Public Library Circulation Desk<br>Aug. 2018 - Mar. 2020</p>
+                <ul>
+                    <li>Assisted library patrons with setting up and updating their library accounts, as well as checking items in and out for them</li>
+                    <li>Processed coming in and going out library items</li>
+                    <li>Helped find library items for patrons</li>
+                    <li>Provided assistance with using computers and programs like MS Office, Chrome and printing</li>
+                </ul>
+                <p class="accomplishments"><strong>Key Accomplishments:</strong> Provided an excellent experience for library patrons helping reinforce a positive image of DPL</p>
+            </div>
+            <div class="w3-half-2">
+            <img src="graphics/dpl-logo.jpg" alt="Denver Public Library" style="width:80%;display:block;margin:auto">
+            </div>
+        </div>
+        <br>
+        <div class="center-btn">        
+            <button class="company-btn dpl-color" onclick="window.open('https://www.denverlibrary.org')" type="button">Company Website</button>
+        </div>
+        <br><br>
+        
+        <!-- Datanet Job Experience -->
+        <div class="dev-job-box box-shadow-l box-right">
+            <h3 class="h3-title title-right">Intern Developer</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2">
+                <img src="graphics/datanet-logo.jpg" alt="Datanet, Inc." style="width:70%;display:block;
+                margin:auto">
+            </div>
+            <div class="w3-half-2 job-details">
+                <p class="company-dates">DataNet, Inc.<br>Jan. 2015 - Feb 2018</p>
+                <ul>
+                    <li>Executed basic developments for software enhancements and configurations using SQL, JavaScript and CSS</li>
+                    <li>Performed database work involving data loads, creating reports and fixing programming bugs</li>
+                </ul>
+                <p class="accomplishments"><strong>Key Accomplishments:</strong> Identified usability issues in the software through testing and helped improve interface styling</p>
+            </div>
+        </div>
+        <br>
+        <div class="center-btn">        
+            <button class="company-btn datanet-color" onclick="window.open('https://datanet.com/')" type="button">Company Website</button>
+        </div>
+        <br><br><br><br><br><br>
+        
+        <!-- ********************************************************************
+                Resume Section 3: Education 
+        ************************************************************************ -->
+        <h2>Education</h2>
+        
+        <!-- B.S. Degree in Marketing from MSU Denver section -->
+        <div class="bs-edu-box box-shadow-r box-left">
+            <h3 class="h3-title title-left">B.S. Marketing, minor in Computer Science</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2 job-details">
+                <p class="graduated">Graduated May 2020 magna cum laude with a 3.76 GPA</p>
+                
+                <h4><strong>Relevant Coursework & Academic Projects:</strong></h4>
+                    <p class="courses">Digital Marketing</p>
+                        <ul>
+                            <li>Developed a group digital marketing campaign for an Apprentorship with Be Bottle</li>
+                            <li>Obtained necessary skills and several certifications for entering the digital marketing field</li>
+                        </ul>
+                    <p class="courses">Social Media Management</p>
+                        <ul>
+                            <li>Developed a group social media marketing plan to for MSU Denver Alumni Association to help promote the annual fundraising event Roadrunner Tuesday</li>
+                        </ul>
+                    <p class="courses">Advertisement Management</p>
+                        <ul>
+                            <li>Developed a group advertising campaign plan for H&M</li>
+                        </ul>
+                    <p class="courses">Multicultural Marketing</p>
+                        <ul>
+                            <li>Developed a group multicultural marketing plan for Nocturne Jazz and Supper Club</li>
+                        </ul>
+                <h4><strong>Student Org. Involvement</strong></h4>
+                    <ul>
+                        <li>Treasurer officer of Beta Gamma Sigma MSU Denver Chapter</li>
+                    </ul>
+                <h4><strong>Awards</strong></h4>
+                    <ul>
+                        <li>Provost Honor Roll (Fall 2019)</li>
+                        <li>College of Business Dean's Academic Achievement Award (Spring 2019)</li>
+                        <li>Roadways Honor Roll (Spring 2019)</li>
+                    </ul>
+            </div>
+            <div class="w3-half-2">
+                <img src="graphics/msu-denver-business.jpg" alt="MSU Denver's College of Business is AACSB accredited" style="width: 100%; display: block; margin: auto; padding-top: 20px;">
+            </div>
+        </div>
+        
+        <!-- Certifications section -->
+        <div class="cert-edu-box box-shadow-l box-right">
+            <h3 class="h3-title title-right">Certifications</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2">
+                <h6></h6>
+            </div>
+            <div class="w3-half-2 job-details">
+                <h4 class="certs"><strong>GreenFig - Digital Marketing Science</strong></h4>
+                    <ul>
+                        <li>Since April 2020</li>
+                    </ul>
+                <h4 class="certs"><strong>Google Analytics Individual Qualification</strong></h4>
+                    <ul>
+                        <li>Since April 2020</li>
+                    </ul>
+                <h4 class="certs"><strong>Google Ads Search</strong></h4>
+                    <ul>
+                        <li>Since April 2020</li>
+                    </ul>
+                <h4 class="certs"><strong>HubSpot Email Marketing</strong></h4>
+                    <ul>
+                        <li>Since April 2020</li>
+                    </ul>
+                <h4 class="certs"><strong>Hootsuite Platform</strong></h4>
+                    <ul>
+                        <li>Since November 2019</li>
+                    </ul>
+            </div>
+        </div>
+        
+        <div class="aa-edu-box box-shadow-r box-left">
+            <h3 class="h3-title title-left">Associate of Arts with emphasis on Computer Science</h3>
+        </div>
+        <div class="w3-row">
+            <div class="w3-half-2 job-details">
+                <p class="graduated">Graduated July 2014 with a 3.51 GPA</p>
+            </div>
+            <div class="w3-half-2">
+            <img src="graphics/rrcc-logo.png" alt="Red Rocks Community College" style="width:70%;display:block;
+                margin:auto;margin-top:-10px">
+            </div>
+        </div>
+        <div style="height:50px; width:100px;"></div>      
+    </div>
+
+</div>
+</div>
+<!-- ********************************************************************************************
+        End of Page content 
+************************************************************************************************* -->
 
 <!-- Footer -->
 <footer class="footer-txt w3-container w3-padding-8 w3-opacity bkgrndTexture light-grey w3-xlarge">
