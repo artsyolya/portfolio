@@ -186,18 +186,24 @@ p, pre, h5 {
 }
 .p-right {
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     width: 400px;
 }
 .p-left {
     text-align: right;
     float: right;
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     width: 400px;
 }
-.p-left2 { text-align: right; float: right; }
+.p-left2 { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: right; 
+    float: right; 
+}
 .p-marg-left { margin-right: 10px; }
+.p-marg-right { margin-left: 10px; }
 
 .source-txt-left {
     float: right;
@@ -328,6 +334,7 @@ p, pre, h5 {
         width: 300px;
     }
     .source-txt-left, .source-txt-right { font-size: 9px; }
+    .p-marg-right { margin-left: 35px; }
     
     .relative-left { margin-top: 0; margin-right: 4%; }
     .relative-left2 { margin-top: 30px; }
