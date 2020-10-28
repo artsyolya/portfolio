@@ -339,6 +339,7 @@ p, pre, h5 {
     .pho-button { font-size: 20px; width: 195px; }
 }
 @media (min-width: 361px) and (max-width: 499px) {
+    .pg-heading { font-size: 20px; }
     .top-heading { margin-top: 50px; }
     .content-width { min-width: 350px; }
     .hero-image { height: 500px; width: auto; }
