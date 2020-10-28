@@ -408,6 +408,7 @@ p, pre, h5 {
 }
 @media (min-width: 500px) and (max-width: 770px){
     .pg-heading { font-size: 40px; }
+    .p-left, .p-right { width: 90%; }
 }
 
 /******************************************
