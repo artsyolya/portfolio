@@ -35,30 +35,34 @@
 			margin: 80px 0 -50px 0;
 			padding-top: 15px;
 			border: none;
-            text-decoration: none;
+            		text-decoration: none;
 			color: white;
-			width: 320px;
-			height: 82px;
-			background-color: rgba(123, 0, 70, 0.75);
-			box-shadow: 10px 10px rgba(199, 208, 216, 0.5);
+			width: 370px;
+			height: 72px;
+			background-color: rgb(123, 0, 70);
+			box-shadow: 5px 5px rgba(199, 208, 216, 0.5);
 			float: right;
+			border-radius: 7px;
 		}
+		.btns-left:hover { background-color: rgb(172, 108, 144); }
 		.btns-right {
 			margin: 80px 0 -50px 0;
 			padding-top: 15px;
 			border: none;
-            text-decoration: none;
+            		text-decoration: none;
 			color: white;
-			width: 320px;
-			height: 82px;
-			background-color: rgba(123, 0, 70, 0.75);
-			box-shadow: -10px 10px rgba(199, 208, 216, 0.5);
+			width: 370px;
+			height: 72px;
+			background-color: rgba(123, 0, 70);
+			box-shadow: -5px 5px rgba(199, 208, 216, 0.5);
 			float: left;
+			border-radius: 7px;
 		}
+		.btns-right:hover { background-color: rgb(172, 108, 144); }
 		.span-p {
 			margin: -22px;
 			font-family: 'Josefin Slab', serif;
-		    text-align: center;
+		    	text-align: center;
 			font-size: 33px;
 			text-transform: uppercase;
 		}
@@ -75,7 +79,7 @@
 		.msu-insta2 { width: 60%; margin-left:10px; margin-top:12px; }
 		.msu-insta3 { width: 25%; margin-left:537px; margin-top:10px; }
 		.pho-img1 { width: 100%; }
-        .pho-img2 { width: 100%; margin-top: 85px; }
+        	.pho-img2 { width: 100%; margin-top: 85px; }
 		h2 {
 		    font-family: 'Lato', sans-serif;
 		    text-transform: uppercase;
@@ -88,24 +92,21 @@
 			.btns-right { width: 80%; height: 62px; box-shadow: -8px 8px rgba(199, 208, 216, 0.5); }
 			.span-p { font-size: 23px; margin: -18px; }
 			.msu-insta1, .msu-insta2 { width: 100%; }
-        }
+        	}
 		@media (max-width: 499px) {
 			.w3-half { padding: 0 10px 0 10px; }
 			.btns-left { width: 100%; height: 55px; box-shadow: 6px 6px rgba(199, 208, 216, 0.5);}
 			.btns-right { width: 100%; height: 55px; box-shadow: -6px 6px rgba(199, 208, 216, 0.5); }
-			
 			.span-p { font-size: 18px; margin: -16px; }
-			
 			.img-size, .img-size2 { width: 80%; }
-		    .img-size3 { width: 80%; float: right; }
+		    	.img-size3 { width: 80%; float: right; }
 			.img-size5 { width: 90%; }
 			.img-size4, .img-size6 { width: 90%; float: right; }
-		    .msu-graphic1 { width: 90%; float: right; }
-		    .msu-insta1 { width: 90%; margin: 20px -10px 0 0; }
-		    .msu-insta2 { width: 90%; margin-left:-10px; }
-		    .pho-img1 { width: 100%; float: right; }
-            .pho-img2 { width: 100%; margin-top: -10px; }
-			
+		    	.msu-graphic1 { width: 90%; float: right; }
+		    	.msu-insta1 { width: 90%; margin: 20px -10px 0 0; }
+		    	.msu-insta2 { width: 90%; margin-left:-10px; }
+		    	.pho-img1 { width: 100%; float: right; }
+            		.pho-img2 { width: 100%; margin-top: -10px; }
 			h2 { width: 310px; font-size: 20px; }
 		}
 	</style>
@@ -159,27 +160,30 @@
 	<div class="hero-image">
 		<div class="w3-container w3-content">
 			<h1 class="pg-heading top-heading">
+				<span class="fade0" style="font-weight:700;">A portfolio<br>of<br>my selected projects</span>
+				<!--
 				<span class="fade30">Portfolio</span><span class="fade50">Portfolio</span><span class="fade30">Portfolio</span><br>
 				<span class="fade70">Portfolio</span><span class="fade0" style="font-weight:700;">Portfolio</span><span class="fade70">Portfolio</span><br>
 				<span class="fade30">Portfolio</span><span class="fade50">Portfolio</span><span class="fade30">Portfolio</span>
+				-->
 			</h1>
 
 			<div>
 				<div class="w3-row">
 					<div class="w3-half">
 						<a class="btns-left" href="#content">
-							<p class="fade70 span-p">Content</p><br><p class="span-p">Content</p><br><p class="fade70 span-p">Content</p>
+							<p class="bk-fade90 span-p">View Content</p><br><p class="span-p">View Content</p><br><p class="bk-fade90 span-p">View Content</p>
 						</a>
 						<a class="btns-left" href="#writing">
-							<p class="fade70 span-p">Writing</p><br><p class="span-p">Writing</p><br><p class="fade70 span-p">Writing</p>
+							<p class="bk-fade90 span-p">View Writing</p><br><p class="span-p">View Writing</p><br><p class="bk-fade90 span-p">View Writing</p>
 						</a>
 					</div>
 					<div class="w3-half">
 						<a class="btns-right" href="#design">
-							<p class="fade70 span-p">Design</p><br><p class="span-p">Design</p><br><p class="fade70 span-p">Design</p>
+							<p class="bk-fade90 span-p">View Designs</p><br><p class="span-p">View Designs</p><br><p class="bk-fade90 span-p">View Designs</p>
 						</a>
 						<a class="btns-right" href="#photography">
-							<p class="fade70 span-p">Photography</p><br><p class="span-p">Photography</p><br><p class="fade70 span-p">Photography</p>
+							<p class="bk-fade90 span-p">View Photography</p><br><p class="span-p">View Photography</p><br><p class="bk-fade90 span-p">View Photography</p>
 						</a>
 					</div>
 				</div>
