@@ -89,8 +89,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (max-width:815px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
+.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}.w3-margin-none{margin:0}}
-@media (max-width:992px) and (min-width:764px){.w3-hide-medium{display:none!important}}
+@media (max-width:992px) and (min-width:764px){.w3-hide-medium{display:none}}
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 @media (max-width:600px){.w3-margin-left-64{margin-left:20px!important}.w3-padding-84-32{padding-top:0px!important}.w3-half{width:50%;}}
 .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
@@ -138,7 +142,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
 .w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
-.w3-margin-left-64{margin-left:64px}
+.w3-margin-left-64{margin-left:64px; margin-top:5px;}
+@media (max-width:770px){ .w3-margin-left-64{margin-top:10px;}} @media (max-width:375px){ .w3-margin-left-64{margin-top:12px;}}
 .w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding:24px!important;}
 .w3-padding-8-24{padding-top:8px!important;padding-left:24px!important;padding-bottom:8px!important;padding-right:24px;}
@@ -151,7 +156,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-16-24{padding-top:24px!important;padding-right:24px!important;padding-bottom:24px!important;padding-left:8px!important;}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}.w3-center-float{float:center!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button:hover{color:#000!important;background-color:rgb(172 108 144 / 44%)!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
@@ -200,8 +205,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-lime,.w3-hover-text-lime:hover{color:#cddc39!important}
 .w3-text-orange,.w3-hover-text-orange:hover{color:#ff9800!important}
 .w3-text-deep-orange,.w3-hover-text-deep-orange:hover{color:#ff5722!important}
-.w3-text-pink,.w3-hover-text-pink:hover{color:#e91e63!important} 
-.text-fuscia,.hover-text-fuscia:hover{color:#ff00ff!important}
+.w3-text-pink,.w3-hover-text-pink:hover{color:#e91e63!important}
 .w3-text-purple,.w3-hover-text-purple:hover{color:#9c27b0!important}
 .w3-text-deep-purple,.w3-hover-text-deep-purple:hover{color:#673ab7!important}
 .w3-text-red,.w3-hover-text-red:hover{color:#f44336!important}
