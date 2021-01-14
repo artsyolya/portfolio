@@ -7,91 +7,50 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-173543291-1');
 	</script>
 
-	<title>Olga Sago - Creative Digital Marketer & Designer</title>
+	<title>Olga Sago | Web Design & Digital Marketing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography.">
+	<meta name="description" content="Hi, my name is Olga Sago, and I’m skilled in web design, digital marketing, content development, and photography.">
 	<meta property="og:type" content="website" /> 
-	<meta property="og:title" content="Olga Sago - Creative Digital Marketer & Designer" />
-	<meta property="og:description" content="Creative, analytical problem-solver. Digital Marketing. Media relations. Content Creation. Website management and design. Storytelling. Photography." />
+	<meta property="og:title" content="Olga Sago | Web Design & Digital Marketing" />
+	<meta property="og:description" content="Hi, my name is Olga Sago, and I’m skilled in web design, digital marketing, content development, and photography." />
 	<meta property="og:url" content="https://www.olgasago.com" />
-	<meta property="og:image" content="https://www.olgasago.com/graphics/os-icon-share.jpg" />
+	<meta property="og:image" content="https://www.olgasago.com/graphics/og-share.jpg" />
 	<link rel="icon" href="graphics/os-icon.png">
-	<link rel="stylesheet" href="w3stylesheet.css">
-	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="styles/w3stylesheet.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="functions.js"></script>
+	<script>
+		$(document).ready(function(){
+			// slowed smoth scrolling on click of <a>
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1500, function(){
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+	</script>
 	<style>
-		h2 {
-		    font-family: 'Josefin Slab', serif;
-		    font-size: 35px;
-			font-weight: 300;
-			color: white;
-			padding: 50px;
-		}
-		.selfie-img {
-			width: 125%;
-			position: relative;
-			animation-name: selfie;
-			animation-duration: 3s;  
-			animation-fill-mode: forwards;
-	    }
-	    @keyframes selfie {
-	      from {left: -500px;}
-	      to {left: 0%;}
-	    }
-	    .wine-box {
-			height: 458px;
-			width: 582px;
-			margin-top: 105px;
-			background: #7b0046;
-			position: relative;
-			animation-name: intro-box;
-			animation-duration: 3s;  
-			animation-fill-mode: backwards;
-	    }
-	    @keyframes intro-box {
-	      from {left: 800px;}
-	      to {left: -7%;}
-	    }
-	    .home-gif {
-			width:75%;
-			display:block;
-			margin:auto;
-	    }
-		@keyframes intro-box {
-		  from {left: 300px;}
-		  to {left: -2%;}
-		}
-		
-		@media (max-width: 1024px){
-			.wine-box { height:358px; width:482px; margin-top:130px; }
-			h2 { font-size: 30px; }
-	    }
-	    @media (max-width: 768px){
-			.wine-box { width:360px; margin-top:50px; }
-			h2 { font-size: 25px; }
-	    }
-	    @media (max-width: 499px){ 
-			.mobile-home{ height:560px; }
-			.wine-box { height: 218px; width: 300px; margin-top: -30px; }
-			h2 { font-size: 20px; padding: 30px 20px 0 20px; }
-			.home-gif { width:100%; }
-			.selfie-img { width: 80%; }
-			@keyframes selfie {
-				from {left: -300px;}
-				to {left: 20%;}
-			}
-		}
+		a { text-decoration: none; }
+		.w3-top {  position: fixed; z-index: 4; }
 	</style>
 </head>
 
@@ -101,10 +60,8 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card">
 	<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
-	   <a href="#" style="text-decoration:none">
-	   <h3 class="logo">Olga Sago</h3>
-	   </a>
-    	</div>
+	   <a href="#"><span class="logo">Olga Sago</span></a>
+    </div>
 		
     <a class="w3-bar-item w3-button menu-padding w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
     <a href="https://instagram.com/olgas.photos/" target="_blank"><em class="fa fa-instagram w3-hover-opacity w3-padding-16-24 w3-xlarge w3-right w3-hide-small"></em></a>
@@ -132,32 +89,20 @@
 </div>
 
 <!-- Page content -->
-<div class="w3-content content-margin" style="max-width:3000px">
+<div class="bkgrndTexture content-margin">
+	<div class="wine-box">
+		<div class="w3-container grid">
+		
+			<div class="bl-box-1"></div><div class="bl-box-2"></div><div class="bl-box-3"></div>
+			<div class="wh-box-1"></div><div class="wh-box-2"></div><div class="wh-box-3"></div>
 
-  <!-- The Portfolio Section -->
-  <div class="w3-container w3-content">
-  <div>
-	<div class="w3-row">
-		<div class="w3-half-2">
-                	<img class="selfie-img" src="images/self-portrait_psyched_200515-med.jpg" alt="Self portrait of Olga Sago jumping in the air in celebration of her graduation.">
-            	</div>
-            	<div class="w3-half-2">
-                	<div class="wine-box">
-			<h2>
-			    <span
-			     class="txt-rotate"
-			     data-period="1000"
-			     data-rotate='[ "","", "", "Greetings! My name is Olga Sago.", "I am a detail-oriented, analytical, tech-savvy and creative problem solving marketing professional.", "I am skilled in digital marketing, media relations, content development, web design, email development, analytics, and photography." ]'>
-			    </span>
-			</h2>
-               		</div>
-            	</div>
-        </div>
-  </div>
-  </div>
-  
-<!-- End Page Content -->
+			<p class="txt-box intro-txt">Hi, my name is Olga Sago, and I’m skilled in web design, digital marketing, content development, and photography.</p>
+					
+			<img class="img-box portrait" src="images/os_portrait.jpg">	
+		</div>           	
+	</div>
 </div>
+<!-- End Page Content -->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-8 w3-opacity bkgrndTexture light-grey w3-xlarge">
