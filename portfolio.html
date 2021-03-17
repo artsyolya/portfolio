@@ -11,7 +11,7 @@
 	  gtag('config', 'UA-173543291-1');
 	</script>
 
-	<title>Portfolio | Olga Sago - Creative Digital Marketer & Designer</title>
+	<title>Portfolio | Olga Sago - Web Designer & Digital Marketer</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Select content, writings, photography and designs from my portfolio.">
@@ -20,9 +20,9 @@
 	<meta property="og:description" content="Select content, writings, photography and designs from my portfolio." />
 	<meta property="og:url" content="https://www.olgasago.com/portfolio.html" />
 	<meta property="og:image" content="https://www.olgasago.com/graphics/os-icon-share.jpg" />
-	<link rel="icon" href="graphics/os-icon.png">
-	<link rel="stylesheet" href="w3stylesheet.css">
-	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="../graphics/os-icon.png">
+	<link rel="stylesheet" href="styles/w3stylesheet.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Slab">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
@@ -30,84 +30,55 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="functions.js"></script>
 	<style>
-		.w3-half { padding: 0 20px 0 20px; }
-		.btns-left {
-			margin: 80px 0 -50px 0;
-			padding-top: 15px;
-			border: none;
-            		text-decoration: none;
-			color: white;
-			width: 370px;
-			height: 72px;
-			background-color: rgb(123, 0, 70);
-			box-shadow: 5px 5px rgba(199, 208, 216, 0.5);
-			float: right;
-			border-radius: 7px;
-		}
-		.btns-left:hover { background-color: rgb(172, 108, 144); }
-		.btns-right {
-			margin: 80px 0 -50px 0;
-			padding-top: 15px;
-			border: none;
-            		text-decoration: none;
-			color: white;
-			width: 370px;
-			height: 72px;
-			background-color: rgba(123, 0, 70);
-			box-shadow: -5px 5px rgba(199, 208, 216, 0.5);
-			float: left;
-			border-radius: 7px;
-		}
-		.btns-right:hover { background-color: rgb(172, 108, 144); }
-		.span-p {
-			margin: -22px;
+		h1 { display: none; }
+		a { text-decoration: none; }
+		.portfolio-content { padding-bottom:100px; }
+		.caption {
 			font-family: 'Josefin Slab', serif;
-		    	text-align: center;
-			font-size: 33px;
-			text-transform: uppercase;
+		    text-align: center;
+			font-size: 22px;
+			width: 400px;
+			color: #1F1F1F;
+			margin-left: 8%;
 		}
-		.img-size, .img-size3 { width: 50%; }
-		.img-size2, .img-size4 { width: 100%; }
-		.img-size5, .img-size6 { width: 100%; }
-		.msu-graphic1 { width: 100%; }
-		.msu-insta1 {
-		    width: 60%;
-		    float: right;
-		    margin-top:12px;
-		    margin-right: 10px;
+		.caption:hover {
+			color: rgb(172 108 144 / 44%); 
+			transition: .5s ease;
 		}
-		.msu-insta2 { width: 60%; margin-left:10px; margin-top:12px; }
-		.msu-insta3 { width: 25%; margin-left:537px; margin-top:10px; }
-		.pho-img1 { width: 100%; }
-        	.pho-img2 { width: 100%; margin-top: 85px; }
-		h2 {
-		    font-family: 'Lato', sans-serif;
-		    text-transform: uppercase;
-		    width: 500px;
-		}	
-		.pho-link { text-decoration: none; }
+		.box-left {
+			margin: 50px 40px -50px 0;
+			padding-top: 15px;			
+			float: right;
+		}
+		.box-right {
+			margin: 50px 0 -50px 40px;
+			padding-top: 15px;
+			float: left;
+		}
+		.work-img { 
+			width:100%; 
+			background-color: #202020;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.work-img:hover { 
+			opacity: 0.2; 
+			transition: .5s ease;
+			border-radius: 30px;
+		}
+		
 		@media (max-width: 770px){
-			h2 { width: 350px; }
-			.btns-left { width: 80%; height: 62px; box-shadow: 8px 8px rgba(199, 208, 216, 0.5); }
-			.btns-right { width: 80%; height: 62px; box-shadow: -8px 8px rgba(199, 208, 216, 0.5); }
-			.span-p { font-size: 23px; margin: -18px; }
-			.msu-insta1, .msu-insta2 { width: 100%; }
-        	}
+			.box-left { width: 80%; }
+			.box-right { width: 80%; }
+			.caption { font-size: 18px; width: 100%; margin-left: 0; }
+			.work-img { width:100%;}
+        }
 		@media (max-width: 499px) {
+			.portfolio-content { padding-bottom: 0; padding-top: 20px; }
 			.w3-half { padding: 0 10px 0 10px; }
-			.btns-left { width: 100%; height: 55px; box-shadow: 6px 6px rgba(199, 208, 216, 0.5);}
-			.btns-right { width: 100%; height: 55px; box-shadow: -6px 6px rgba(199, 208, 216, 0.5); }
-			.span-p { font-size: 18px; margin: -16px; }
-			.img-size, .img-size2 { width: 80%; }
-		    	.img-size3 { width: 80%; float: right; }
-			.img-size5 { width: 90%; }
-			.img-size4, .img-size6 { width: 90%; float: right; }
-		    	.msu-graphic1 { width: 90%; float: right; }
-		    	.msu-insta1 { width: 90%; margin: 20px -10px 0 0; }
-		    	.msu-insta2 { width: 90%; margin-left:-10px; }
-		    	.pho-img1 { width: 100%; float: right; }
-            		.pho-img2 { width: 100%; margin-top: -10px; }
-			h2 { width: 310px; font-size: 20px; }
+			.box-left { width: 90%; float:none; margin: 0; }
+			.box-right { width: 90%; float: none; margin: 0; }
+			.caption { font-size: 14px; width: 100%; margin-left: 0; }
+			.work-img { width:100%;}
 		}
 	</style>
 </head>
@@ -117,10 +88,10 @@
         Top of page navigation bar
 ************************************************************************************************* -->
 <div class="w3-top">
-	<div class="w3-bar w3-white w3-card">
+	<div class="w3-bar w3-white"> <!-- w3-card adds bottom shadow to nav bar  -->
 		<div id="mobile-logo" class="w3-bar-item w3-container w3-white w3-margin-left-64" style="padding:0">
 		<a href="index.html" style="text-decoration:none">
-		<h3 class="logo">Olga Sago</h3>
+		<span class="logo">Olga Sago</span>
 		</a>
 		</div>
 			
@@ -151,490 +122,47 @@
 <!-- ********************************************************************************************
         Start of Page content 
 ************************************************************************************************* -->
-<div class="w3-content content-width content-margin">
+<div class="w3-content bkgrndTexture content-width content-margin">
 
     <!-- ********************************************************************************************
             Beginning of Portfolio page with sections links 
-    ************************************************************************************************* -->
+	************************************************************************************************* -->
+	<h1>Portfolio</h1>
 	
-	<div class="hero-image" style="height:800px;">
+	<div class="w3-white" style="max-width:95%;margin:auto">
 		<div class="w3-container w3-content">
-			<h1 class="pg-heading top-heading">
-				<span class="fade0" style="font-weight:600;">A portfolio<br>of my<br>selected projects</span>
-			</h1>
-
-			<div>
+			<div class="portfolio-content">
 				<div class="w3-row">
-					<div class="w3-half">
-						<a class="btns-left" href="#content">
-							<p class="bk-fade90 span-p">View Content</p><br><p class="span-p">View Content</p><br><p class="bk-fade90 span-p">View Content</p>
-						</a>
-						<a class="btns-left" href="#writing">
-							<p class="bk-fade90 span-p">View Writing</p><br><p class="span-p">View Writing</p><br><p class="bk-fade90 span-p">View Writing</p>
+					<div class="w3-half-2">
+						<a class="box-left" href="portfolio/msu-denver.html">
+							<img class="work-img" src="graphics/msu-denver-mockup.jpg" >
+							<h2 class="caption"><strong>MSU Denver</strong> / Content Development, Writing & Photography</23>
 						</a>
 					</div>
-					<div class="w3-half">
-						<a class="btns-right" href="#design">
-							<p class="bk-fade90 span-p">View Designs</p><br><p class="span-p">View Designs</p><br><p class="bk-fade90 span-p">View Designs</p>
-						</a>
-						<a class="btns-right" href="#photography">
-							<p class="bk-fade90 span-p">View Photography</p><br><p class="span-p">View Photography</p><br><p class="bk-fade90 span-p">View Photography</p>
+					<div class="w3-half-2">
+						<a class="box-right" href="portfolio/olga-sago-photography.html">
+							<img class="work-img" src="graphics/pho-portfolio-mockup.jpg" >
+							<h2 class="caption"><strong>Olga Sago Photography</strong> / Website Design & Development</h2>
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- ********************************************************************************************
-            Select Content Section 
-    ************************************************************************************************* -->
-	<div class="hero-image">
-		<div id="content" class="w3-container w3-content">
-			<h1 class="heading fade90">Select Content</h1>
-			<h1 class="heading fade80">Select Content</h1>
-			<h1 class="heading fade70">Select Content</h1>
-			<h1 class="heading fade60">Select Content</h1>
-			<h1 class="heading fade50">Select Content</h1>
-			<h1 class="heading fade40">Select Content</h1>
-			<h1 class="heading fade30">Select Content</h1>
-			<h1 class="heading fade20">Select Content</h1>
-			<h1 class="heading fade0">Select Content</h1>
-		</div>
-	</div>
-
-	<div class="bckgnd bk-fade0"></div>
-	<div class="bckgnd bk-fade10"></div>
-	<div class="bckgnd bk-fade20"></div>
-	<div class="bckgnd bk-fade30"></div>
-	<div class="bckgnd bk-fade40"></div>
-	<div class="bckgnd bk-fade50"></div>
-	<div class="bckgnd bk-fade60"></div>
-	<div class="bckgnd bk-fade70"></div>
-	<div class="bckgnd bk-fade80"></div>
-	<div class="bckgnd bk-fade90"></div>    
-	  
-	<div class="white-box"></div>
-    	
-	<div class="w3-white">
-		<div class="w3-container w3-content">
-			<!-- Select Content Piece 1 -->
-			<div>
 				<div class="w3-row">
 					<div class="w3-half-2">
-						<img src="images/Spring-2017_0204JS_170326cc.jpg" alt="Blossiming trees on Auraria Campus in Spring" class="box-shadow-left msu-graphic1">
-					</div>
-					<div class="w3-half-2"></div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<p class="source-txt-left relative-left2">Instagram</p>
+						<a class="box-left" href="portfolio/know-when-to-book-flights.html">
+							<img class="work-img" src="graphics/travel-app-mockup.jpg" >
+							<h2 class="caption"><strong>Know When to Book Flights</strong> / Android App Development, UX/UI</h2>
+						</a>
 					</div>
 					<div class="w3-half-2">
-						<img src="images/RestCaption_MSU_Instagram.png" alt="MSU Denver Instagram caption about rest" class="msu-insta2">
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-			
-			<!-- Select Content Piece 2 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/running_in_central_park.jpg" alt="Running in Central Park" class="img-size2 box-shadow-right">
-					</div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img src="images/RunningCaption_MSU_Instagram.png" alt="MSU Denver Instagram caption about rest" class="msu-insta1">
-					</div>
-					<div class="w3-half-2">
-						<p class="source-txt-right relative-right2">Instagram</p>
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-			
-			<!-- Select Content Piece 3 -->
-			<div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img src="images/Gratitude_Quote_1.png" alt="Gratitude quote Instagram graphic for MSU Denver" class="box-shadow-left msu-graphic1">
-					</div>
-					<div class="w3-half"></div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<p class="source-txt-left relative-left2">Instagram</p>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/GratitudeCaption_MSU_Instagram.png" alt="Caption for gratitude quote Instagram post for MSU Denver" class="msu-insta2">
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-		
-			<!-- Select Content Piece 4 -->
-			<div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/RoadrunnerTues2019_InstaGraphic.png" alt="MSU Denver Roadrunner Tuesday 2019 Instagram Graphic" class="box-shadow-right msu-border msu-graphic1">
-					</div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img src="images/RoadrunnerTues2019_InstaCaption.png" alt="MSU Denver Roadrunner Tuesday 2019 Instagram Caption" class="msu-insta1">
-					</div>
-					<div class="w3-half-2">
-						<p class="source-txt-right relative-right3">Instagram</p>
+						<!--<a class="box-right">
+							<img class="work-img" src="graphics/be-bottle-mockup.jpg" >
+							<h2 class="caption"><strong>Be Bottle</strong> / Digital Marketing Campaign Development</h2>
+						</a>-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="white-box"></div>
-	
-	<!-- ********************************************************************************************
-            Select Writing Section 
-    ************************************************************************************************* -->
-    <div class="bckgnd bk-fade90"></div>
-    <div class="bckgnd bk-fade80"></div>
-    <div class="bckgnd bk-fade70"></div>
-    <div class="bckgnd bk-fade60"></div>
-    <div class="bckgnd bk-fade50"></div>
-    <div class="bckgnd bk-fade40"></div>
-    <div class="bckgnd bk-fade30"></div>
-    <div class="bckgnd bk-fade20"></div>
-    <div class="bckgnd bk-fade10"></div>
-    <div class="bckgnd bk-fade0"></div>    
-  
-	<div class="hero-image">
-		<div id="writing" class="w3-container w3-content">
-			<h1 class="top-heading heading fade90">Select Writing</h1>
-			<h1 class="heading fade80">Select Writing</h1>
-			<h1 class="heading fade70">Select Writing</h1>
-			<h1 class="heading fade60">Select Writing</h1>
-			<h1 class="heading fade50">Select Writing</h1>
-			<h1 class="heading fade40">Select Writing</h1>
-			<h1 class="heading fade30">Select Writing</h1>
-			<h1 class="heading fade20">Select Writing</h1>
-			<h1 class="heading fade0">Select Writing</h1>
-		</div>
-	</div>
-
-    <div class="bckgnd bk-fade0"></div>
-    <div class="bckgnd bk-fade10"></div>
-    <div class="bckgnd bk-fade20"></div>
-    <div class="bckgnd bk-fade30"></div>
-    <div class="bckgnd bk-fade40"></div>
-    <div class="bckgnd bk-fade50"></div>
-    <div class="bckgnd bk-fade60"></div>
-    <div class="bckgnd bk-fade70"></div>
-    <div class="bckgnd bk-fade80"></div>
-    <div class="bckgnd bk-fade90"></div>
-	
-	<div class="white-box"></div>
-
-	<div class="w3-white">
-		<div class="w3-container w3-content">
-			<!-- Select Writing Piece 1 -->
-			<div>
-				<img src="images/SouthPlatteRiver_CleanUp.png" alt="South Platte River Trash Clean Up" class="img-size box-shadow-left">
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<h2 class="h2-left">A Day of<br>Doing Some Good<br> for the Denver Community</h2>
-					</div>
-					<div class="w3-half-2 w3-right">
-						<div class="w3-white"></div>
-					</div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<p class="source-txt-left relative-left">The Denver Post's YourHub</p>
-					</div>
-					<div class="w3-half-2">
-						<p class="p-right">The day started out gloomy, windy and chilly. As I sat down with my group to eat 
-						some lunch before starting three hours of volunteer work, I worried it was going to be a chilly 
-						day of picking up trash along the Platte River. But rest assured, Colorado weather turned out 
-						to be as drastic and unpredictable as ever and so was the task at hand... 
-						<a href="https://yourhub.denverpost.com/blog/2018/05/a-day-of-doing-some-good-for-the-denver-community/215863/" target="_blank">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-			
-			<!-- Select Writing Piece 2 -->
-			<div>
-				<img src="images/SciFi_Film.png" alt="SciFi Film" class="img-size3 box-shadow-right">
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<h2 class="h2-2">Under the Surface<br>of Sci-Fi</h2>
-					</div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<p class="p-left">What does it mean to be human? The ending scene of Guillermo del Toro’s 2017 
-						film “The Shape of Water” sums up the unconditional love that developed between a mute woman 
-						and a merman. Science fiction shows us that being human is more than meets the eye... 
-						<a href="https://red.msudenver.edu/2018/under-the-surface-of-sci-fi.html" target="_blank">Read more</a></p>
-					</div>
-					<div class="w3-half-2">
-						<p class="source-txt-right relative-right">R.E.D.</p>
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-			
-			<!-- Select Writing Piece 3 -->
-			<div>
-				<img src="images/SocialPublishing.png" alt="SciFi Film" class="img-size box-shadow-left">
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<h2 class="h2-left">Let's<br>Talk About<br>Social Publishing</h2>
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<p class="source-txt-left relative-left">Exploring Marketing with Olga</p>
-					</div>
-					<div class="w3-half-2">
-						<p class="p-right">Social publishing is one of four zones of social media that marketers use 
-						to connect and promote to consumers. It includes blogging, microblogging, video, photo 
-						and audio sharing sites and news sites that companies use to publish content online... 
-						<a href="https://exploringmarketingwitholga.home.blog/" target="_blank">Read more</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- ********************************************************************************************
-            Select Designs Section 
-    ************************************************************************************************* -->
-	<div class="bckgnd bk-fade90"></div>
-	<div class="bckgnd bk-fade80"></div>
-	<div class="bckgnd bk-fade70"></div>
-	<div class="bckgnd bk-fade60"></div>
-	<div class="bckgnd bk-fade50"></div>
-	<div class="bckgnd bk-fade40"></div>
-	<div class="bckgnd bk-fade30"></div>
-	<div class="bckgnd bk-fade20"></div>
-	<div class="bckgnd bk-fade10"></div>
-	<div class="bckgnd bk-fade0"></div>
-	
-	<div class="hero-image">
-	  	<div id="design" class="w3-container w3-content">
-			<h1 class="top-heading heading fade90">Select Designs</h1>
-			<h1 class="heading fade80">Select Designs</h1>
-			<h1 class="heading fade70">Select Designs</h1>
-			<h1 class="heading fade60">Select Designs</h1>
-			<h1 class="heading fade50">Select Designs</h1>
-			<h1 class="heading fade40">Select Designs</h1>
-			<h1 class="heading fade30">Select Designs</h1>
-			<h1 class="heading fade20">Select Designs</h1>
-			<h1 class="heading fade0">Select Designs</h1>
-	  	</div>
-	</div>
-
-	<div class="bckgnd bk-fade0"></div>
-	<div class="bckgnd bk-fade10"></div>
-	<div class="bckgnd bk-fade20"></div>
-	<div class="bckgnd bk-fade30"></div>
-	<div class="bckgnd bk-fade40"></div>
-	<div class="bckgnd bk-fade50"></div>
-	<div class="bckgnd bk-fade60"></div>
-	<div class="bckgnd bk-fade70"></div>
-	<div class="bckgnd bk-fade80"></div>
-	<div class="bckgnd bk-fade90"></div>
-		
-	<div class="white-box"></div>
-	  
-	<div class="w3-white">
-	  	<div class="w3-container w3-content">
-			<!-- Select Design Piece 1 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/portfolio-design-mockup.png" alt="Web design mockup of this portfolio website" class="img-size5 box-shadow-right">
-					</div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<h2 class="h2-left2">Portfolio web design</h2>
-						<p class="p-left2 p-marg-left">I designed and coded my portfolio website, the repository to which you can find on my <a href="https://github.com/artsyolya/portfolio" target="_blank">github</a>.</p>
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>	
-			</div>
-	  		<div class="white-box"></div>
-
-			<!-- Select Design Piece 2 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img src="images/pho-portfolio-design-mockup.png" alt="Web design mockup of my photography portfolio website" class="img-size6 box-shadow-left">
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<h2 class="h2-right">Photography Portfolio<br>web design</h2>
-						<p class="p-right p-marg-right">I designed and coded my photography portfolio website, the repository to which you can find on my <a href="https://github.com/artsyolya/photography" target="_blank">github</a>.</p>
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-			  
-			<!-- Select Design Piece 3 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/BGS_Rockies.png" alt="BGS Colorado Rockies Flyer" class="img-size5 box-shadow-right">
-					</div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<h2 class="h2-left2">Promotional Flyer for<br>Beta Gamma Sigma:<br>International Business<br>Honor Society</h2>
-						<p class="p-left2 p-marg-left">Beta Gama Sigma members had the opportunity to go to a free Denver Rockies game. I designed a flyer to showcase all the important info and encourage people to attend.</p>
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>
-			</div>
-	  		<div class="white-box"></div>
-		  
-	  		<!-- Select Design Piece 4 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img src="images/Know_when_to_book_app_layout.png" alt="Know When to Book app layout" class="img-size4 box-shadow-left">
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<h2 class="h2-right">Know When to Book<br>Android app</h2>
-						<p class="p-right p-marg-right">The app helps address the issue of knowing how far in advance it is recommended to book flights. Other features include best and worst times to travel to desired destinations, as well as options to explore the destinations on Google Maps and LonelyPlanet.com, and start the booking flights process through Skyscanner.com.</p>
-						<p class="p-right p-marg-right">The app was developed as a final project for mobile programming class.</p>
-					</div>
-				</div>	
-			</div>
-	  		<div class="white-box"></div>
-	  
-	  		<!-- Select Design Piece 5 -->
-			<div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-					<div class="w3-half-2">
-						<img src="images/EarthDayDesign_BlueWake_18oz_Product_Group-2.png" alt="Earth Day themed bottle design for Be Bottle mock-up" class="img-size5 box-shadow-right">
-					</div>
-				</div>	
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<h2 class="h2-left2">Earth Day<br>Bottle Mock Design<br>for Be Bottle</h2>
-						<p class="p-left2 p-marg-left">The bottle design was done as part of a digital marketing campaign for Be Bottle that was to run the week of Earth Day 2020, but was unfortunately scrapped due to COVID-19.</p>
-					</div>
-					<div class="w3-half-2">
-						<div class="row-white-box"></div>
-					</div>
-				</div>
-			</div>
-			<div class="white-box"></div>
-		  
-	  	</div>
-	</div>
-
-	<!-- ********************************************************************************************
-            Select Photography Section 
-    ************************************************************************************************* -->
-    <div class="bckgnd bk-fade90"></div>
-    <div class="bckgnd bk-fade80"></div>
-    <div class="bckgnd bk-fade70"></div>
-    <div class="bckgnd bk-fade60"></div>
-    <div class="bckgnd bk-fade50"></div>
-    <div class="bckgnd bk-fade40"></div>
-    <div class="bckgnd bk-fade30"></div>
-    <div class="bckgnd bk-fade20"></div>
-    <div class="bckgnd bk-fade10"></div>
-    <div class="bckgnd bk-fade0"></div>
-
-	<div class="hero-image">
-		<div id="photography" class="w3-container w3-content">
-			<h1 class="top-heading heading fade90">Select Photography</h1>
-			<h1 class="heading fade80">Select Photography</h1>
-			<h1 class="heading fade70">Select Photography</h1>
-			<h1 class="heading fade60">Select Photography</h1>
-			<h1 class="heading fade50">Select Photography</h1>
-			<h1 class="heading fade40">Select Photography</h1>
-			<h1 class="heading fade30">Select Photography</h1>
-			<h1 class="heading fade20">Select Photography</h1>
-			<h1 class="heading fade0">Select Photography</h1>
-		</div>
-	</div>
-	
-	<div class="bckgnd bk-fade0"></div>
-    <div class="bckgnd bk-fade10"></div>
-    <div class="bckgnd bk-fade20"></div>
-    <div class="bckgnd bk-fade30"></div>
-    <div class="bckgnd bk-fade40"></div>
-    <div class="bckgnd bk-fade50"></div>
-    <div class="bckgnd bk-fade60"></div>
-    <div class="bckgnd bk-fade70"></div>
-    <div class="bckgnd bk-fade80"></div>
-    <div class="bckgnd bk-fade90"></div>
-    
-    <!-- Collage of select top photos  -->
-    <div class="w3-white">
-		<div class="w3-container w3-content">
-			<div>
-				<div class="w3-row">
-					<div class="w3-half-2">
-						<img class="pho-img1" src="images/top-photos-left.jpg" alt="Select top photos left-side collage">
-					</div>
-					<div class="w3-half-2">
-						<img class="pho-img2" src="images/top-photos-right.jpg" alt="Select top photos right-side collage">
-					</div>
-				</div>
-				<div class="center-btn">        
-					<button class="pho-btn" onclick="window.open('https://www.photos.olgasago.com')" type="button">see full portfolio</button>
-				</div>
-			</div>
-		</div>
-    </div>
-    <div class="white-box"></div>
        
 </div>
 <!-- ********************************************************************************************
