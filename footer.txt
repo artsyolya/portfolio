@@ -1,1 +1,0 @@
-document.write('<center><p class="footer-txt">sago.olga@gmail.com | Aurora, CO | Available worldwide<br>Copyright &#169; 2021 Olga Sago</p></center>')
