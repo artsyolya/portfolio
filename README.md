@@ -1,8 +1,6 @@
-# Greetings!
+# My Portfolio Website: v5
 
-Here you will find repositories to my current and previous versions of my development & design portfolio website.
-
-Current version: v5
+This is version 5 of my development & design portfolio website.
 
 ## Features
 
