@@ -1,0 +1,26 @@
+.contact {
+  padding: 15rem 0;
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $ms-surface-duo-width) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15rem 10vw;
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .contact {
+    display: revert;
+    padding: 7rem 0 14rem 0;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .contact {
+    width: 96vw;
+    margin: 0 auto;
+  }
+}

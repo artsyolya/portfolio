@@ -1,0 +1,52 @@
+// Colors
+$color-black: #1f1f1f;
+$color-grey: #747474;
+$color-white: #e4e4e4;
+
+$color-wine: #871959;
+$color-wine-light: rgba(123, 0, 70, 0.3);
+$color-wine-dark: #76004d;
+$color-wine-black: #3a0227;
+
+$color-purple-gradient-fallback: rgb(76, 0, 120);
+$color-purple-gradient-30: radial-gradient(
+  circle at 30%,
+  rgba(76, 0, 120, 0.9) 0%,
+  rgba(123, 0, 70, 0.9) 50%,
+  rgba(76, 0, 120, 0.9) 100%
+);
+$color-purple-gradient-70: radial-gradient(
+  circle at 70%,
+  rgba(76, 0, 120, 0.9) 0%,
+  rgba(123, 0, 70, 0.9) 50%,
+  rgba(76, 0, 120, 0.9) 100%
+);
+
+$color-box-shadow-sm: 0.2rem 0.2rem 0 0 rgba(121, 0, 71, 0.3),
+  0.4rem 0.4rem 0 0 rgba(79, 0, 117, 0.3);
+$color-box-shadow-md: 0.3rem 0.3rem 0 0 rgba(121, 0, 71, 0.3),
+  0.6rem 0.6rem 0 0 rgba(79, 0, 117, 0.3);
+$color-box-shadow-lg: 0.5rem 0.5rem 0 0 rgba(121, 0, 71, 0.3),
+  1rem 1rem 0 0 rgba(79, 0, 117, 0.3);
+
+// Font-families
+$font-heading: "Playfair Display", serif;
+$font-text: "Josefin Sans", sans-serif;
+
+// Screen sizes
+$laptop-width: 1300px;
+$ms-surface-duo-width: 1120px;
+
+$tablet-width-vertical-lg: 920px;
+$tablet-width-vertical-md: 840px;
+$tablet-width-horizontal-lg: 1200px;
+$tablet-width-horizontal-md: 1110px;
+$tablet-width-horizontal-sm: 1030px;
+
+$mobile-width-vertical-lg: 440px;
+$mobile-width-vertical-md: 393px;
+$mobile-width-vertical-sm: 360px;
+$mobile-width-vertical-tiny: 320px;
+$mobile-width-horizonral-md: 800px;
+$mobile-height-vertical-lg: 440px;
+$mobile-height-vertical-sm: 360px;

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Playfair+Display:wght@500;600;700;800;900&display=swap");
+
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+
+@import "components/empty-item";
+@import "components/img-puzzle";
+@import "components/social-icon";
+@import "components/work-item";
+
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/navigation";
+@import "layout/work";
+
+/**************************  
+    Hero Content 
+************************* */
+
+@media screen and (max-width: 800px) and (max-height: 344px) {
+}
+
+/**************************  
+    About Section
+************************* */
+@media screen and (max-width: 800px) and (max-height: 344px) {
+}

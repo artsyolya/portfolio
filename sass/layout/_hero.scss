@@ -1,0 +1,185 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  width: 80vw;
+  max-width: 110rem;
+  margin: auto;
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+  }
+  &__col1,
+  &__col2 {
+    width: 50%;
+  }
+
+  // Text Content
+  &__col1 {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-heading--divider {
+    width: 105%;
+    height: 0.6rem;
+    background-color: $color-black;
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  // View Work Button
+  &__view-work {
+    margin: -1rem auto 0 auto;
+    text-align: center;
+
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.6rem;
+      font-family: $font-text;
+
+      & p {
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: transform 1s ease;
+
+        &:hover {
+          background: rgba(228, 204, 218, 0.25);
+          /* border: 1px solid rgba(255, 255, 255, 0.5); */
+          -webkit-box-shadow: 0.3rem 0.3rem 0 0 rgb(121 0 71 / 20%),
+            0.6rem 0.6rem 0 0 rgb(79 0 117 / 20%);
+          box-shadow: 0.3rem 0.3rem 0 0 rgb(121 0 71 / 20%),
+            0.6rem 0.6rem 0 0 rgb(79 0 117 / 20%);
+
+          transform: translateY(-0.5rem);
+        }
+      }
+    }
+
+    &--arrow {
+      font-size: 2rem;
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+/************************************************* 
+	Pageload animation activated
+*************************************************/
+.load-fadein {
+  &.hero {
+    &-heading--divider {
+      -webkit-animation-delay: 2.5s;
+      animation-delay: 2.5s;
+    }
+    &__view-work--link {
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s;
+    }
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $ms-surface-duo-width) {
+  .hero-heading--divider {
+    width: 97%;
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .hero__grid {
+    height: 75%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .hero {
+    height: 85%;
+    width: 77vw;
+    max-width: 65rem;
+    &__grid {
+      height: 74%;
+    }
+    &__col1 {
+      width: 60%;
+    }
+    &__col2 {
+      width: 40%;
+    }
+    &-heading--divider {
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-md) {
+  .hero {
+    max-width: 61rem;
+
+    &-heading--divider {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .hero {
+    height: 87%;
+
+    &__grid {
+      flex-direction: column-reverse;
+      height: 90%;
+      margin-top: 0;
+    }
+    &__col1,
+    &__col2 {
+      width: 100%;
+    }
+    &__col1 {
+      padding-bottom: 4rem;
+    }
+    &-heading--divider {
+      margin-top: 1.5rem;
+      height: 0.6rem;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-md) {
+  .hero {
+    height: 88%;
+
+    &__grid {
+      height: 84%;
+      margin-top: 1rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-sm) {
+  .hero {
+    height: 86%;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-tiny) {
+  .hero {
+    &__grid {
+      height: 92%;
+      margin-top: 0;
+    }
+    &__col1 {
+      padding-bottom: 4rem;
+    }
+    &-heading--divider {
+      height: 0.4rem;
+      margin: 0.7rem 0 1rem 0;
+    }
+  }
+}
+@media screen and (max-height: $mobile-height-vertical-lg) {
+  .hero {
+    height: 90%;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,185 @@
+.about {
+  background: $color-purple-gradient-fallback;
+  background: $color-purple-gradient-70;
+  width: 94vw;
+  margin: auto;
+  padding: 12rem 0 8rem 0;
+
+  &__content {
+    color: $color-white;
+    width: 90%;
+    margin: auto;
+  }
+  &__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
+  // Profile img column
+  &__img {
+    width: 32rem;
+
+    &-col {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // About me intro and skills column
+  &__txt-col {
+    width: 55%;
+    margin-left: auto;
+    padding-right: 5rem;
+  }
+  &__skills {
+    &-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      max-width: 70rem;
+    }
+    &-icon {
+      width: 100%;
+      max-width: 8rem;
+      height: 100%;
+      padding: 0 2rem;
+    }
+  }
+
+  // Technologies toolbox
+  &__tech {
+    &-grid {
+      max-width: 90vw;
+      overflow: hidden;
+    }
+    &-row {
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 2rem 0;
+      display: inline-block;
+      border-top: 0.2rem solid rgba($color-white, 0.5);
+      border-bottom: 0.2rem solid rgba($color-white, 0.5);
+      padding: 1rem 0 0.5rem;
+    }
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $laptop-width) {
+  .about {
+    &__img {
+      width: 65%;
+    }
+    &__txt-col {
+      padding: 0 7rem 0 0;
+    }
+  }
+}
+@media screen and (max-width: $ms-surface-duo-width) {
+  .about {
+    padding-top: 8rem;
+
+    &__img {
+      width: 75%;
+    }
+    &__txt-col {
+      width: 45%;
+      padding: 0;
+    }
+    &__tech-row {
+      margin: 1rem 0;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .about__txt-col {
+    width: 55%;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .about {
+    padding: 6rem 0 5rem 0;
+
+    &__grid {
+      width: 90vw;
+      max-width: 80rem;
+      margin: 0 auto;
+      padding-top: 0;
+      align-items: flex-start;
+    }
+    &__img {
+      width: 100%;
+      padding: 0;
+
+      &-col {
+        width: 35%;
+        padding: 1.5rem 0 0 3rem;
+      }
+    }
+    &__content {
+      width: 100%;
+    }
+    &__txt-col {
+      width: 65%;
+      padding: 0 3rem;
+    }
+    &__skills-icon {
+      max-width: 7rem;
+    }
+    &__tech-row {
+      margin: 0.7rem 0;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .about {
+    width: 96vw;
+    padding: 6rem 0 5rem 0;
+
+    &__content {
+      width: 100%;
+    }
+    &__grid {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      width: 25rem;
+
+      &-col {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    &__txt-col {
+      width: 90%;
+      padding: 0;
+      margin: 2rem auto 0 auto;
+    }
+    &__skills {
+      &-grid {
+        width: 100%;
+        margin: 0 auto;
+      }
+      &-icon {
+        max-width: 6rem;
+        padding: 0 1.5rem 0 1rem;
+      }
+    }
+    &__tech {
+      &-grid {
+        max-width: 95vw;
+      }
+      &-row {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

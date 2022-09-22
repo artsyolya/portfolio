@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-173543291-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-173543291-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Olga Sago | Front-end Web Developer, Web Designer, Photographer
+    </title>
+    <meta
+      name="description"
+      content="Hi, my name is Olga Sago. I'm a front-end web developer, web designer and photographer with experience in web development, digital marketing, content development, and photography. I'm based in Aurora, CO and available worldwide."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Olga Sago | Front-end Web Developer, Web Designer, Photographer"
+    />
+    <meta
+      property="og:description"
+      content="Hi, my name is Olga Sago. I'm a front-end web developer, web designer and photographer with experience in web development, digital marketing, content development, and photography. I'm based in Aurora, CO and available worldwide."
+    />
+    <meta property="og:url" content="https://www.olgasago.com" />
+    <meta
+      property="og:image"
+      content="https://www.olgasago.com/images/os-share.jpg"
+    />
+    <link rel="icon" href="./images/os-icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script
+      src="https://kit.fontawesome.com/d31d2c594d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="./functions/app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#work" class="nav__link nav-work">Work</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://photography.olgasago.com"
+              target="_blank"
+              class="nav__link"
+              >Photography</a
+            >
+          </li>
+          <li class="nav__item--dropdown">
+            <button class="nav__item--dropbtn">
+              Design Shops
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="nav__item--dropdown-content">
+              <a
+                href="https://www.etsy.com/shop/OlyasDigitalDesigns"
+                target="_blank"
+                class="nav__link"
+                ><i class="fa-thin fa-arrow-turn-down-right"></i>Etsy Shop</a
+              >
+              <a
+                href="https://www.redbubble.com/people/weirdbunch/shop"
+                target="_blank"
+                class="nav__link"
+                ><i class="fa-thin fa-arrow-turn-down-right"></i>Redbubble
+                Shop</a
+              >
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link nav-about">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link nav-contact">Contact</a>
+          </li>
+          <li class="nav__item--mobile">
+            <a href="https://instagram.com/olgas.designs/" target="_blank">
+              <em class="fab fa-instagram social-icon"></em>
+            </a>
+            <a href="https://dribbble.com/olga-sago" target="_blank">
+              <em class="fab fa-dribbble social-icon"></em>
+            </a>
+            <a href="https://github.com/artsyolya/" target="_blank">
+              <em class="fab fa-github-square social-icon"></em>
+            </a>
+            <a href="https://www.linkedin.com/in/olga-sago/" target="_blank">
+              <em class="fab fa-linkedin-in social-icon"></em>
+            </a>
+          </li>
+        </ul>
+        <div class="nav__mobile">
+          <div class="nav__mobile--line1"></div>
+          <div class="nav__mobile--line2"></div>
+          <div class="nav__mobile--line3"></div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__grid">
+          <div class="hero__col1">
+            <div class="hero__content">
+              <h1 class="hero-heading--main load-fadein">Hi, I'm Olga Sago!</h1>
+              <div class="hero-heading--divider load-fadein"></div>
+              <p class="hero-heading--sub load-fadein">
+                A front-end developer, web designer, and photographer, based in
+                Colorado, U.S., available worldwide.
+              </p>
+              <!-- <p class="txt-box intro-txt">Using web design, fron-end development, and photography to help businesses grow their digital marketing presence.</p> -->
+            </div>
+          </div>
+          <div class="hero__col2">
+            <div class="img-puzzle">
+              <img
+                src="./images/puzzle-portrait/y1x1.jpg"
+                alt=""
+                class="img-puzzle--r1c1 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y1x2.jpg"
+                alt=""
+                class="img-puzzle--r1c2"
+              />
+              <img
+                src="./images/puzzle-portrait/y1x3.jpg"
+                alt=""
+                class="img-puzzle--r1c3 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y1x4.jpg"
+                alt=""
+                class="img-puzzle--r1c4"
+              />
+              <img
+                src="./images/puzzle-portrait/y2x1.jpg"
+                alt=""
+                class="img-puzzle--r2c1"
+              />
+              <img
+                src="./images/puzzle-portrait/y2x2.jpg"
+                alt=""
+                class="img-puzzle--r2c2 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y2x3.jpg"
+                alt=""
+                class="img-puzzle--r2c3"
+              />
+              <img
+                src="./images/puzzle-portrait/y2x4.jpg"
+                alt=""
+                class="img-puzzle--r2c4 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y3x1.jpg"
+                alt=""
+                class="img-puzzle--r3c1 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y3x2.jpg"
+                alt=""
+                class="img-puzzle--r3c2"
+              />
+              <img
+                src="./images/puzzle-portrait/y3x3.jpg"
+                alt=""
+                class="img-puzzle--r3c3 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y3x4.jpg"
+                alt=""
+                class="img-puzzle--r3c4"
+              />
+              <img
+                src="./images/puzzle-portrait/y4x1.jpg"
+                alt=""
+                class="img-puzzle--r4c1"
+              />
+              <img
+                src="./images/puzzle-portrait/y4x2.jpg"
+                alt=""
+                class="img-puzzle--r4c2 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y4x3.jpg"
+                alt=""
+                class="img-puzzle--r4c3"
+              />
+              <img
+                src="./images/puzzle-portrait/y4x4.jpg"
+                alt=""
+                class="img-puzzle--r4c4 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y5x1.jpg"
+                alt=""
+                class="img-puzzle--r5c1 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y5x2.jpg"
+                alt=""
+                class="img-puzzle--r5c2"
+              />
+              <img
+                src="./images/puzzle-portrait/y5x3.jpg"
+                alt=""
+                class="img-puzzle--r5c3 load-fadein"
+              />
+              <img
+                src="./images/puzzle-portrait/y5x4.jpg"
+                alt=""
+                class="img-puzzle--r5c4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero__view-work">
+          <a href="#work" class="hero__view-work--link load-fadein">
+            <p>
+              <span class="hero__view-work--arrow">&#8595;</span>view my
+              work<span class="hero__view-work--arrow">&#8595;</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- WORK SHOWCASE SECTION -->
+    <section id="work" class="work">
+      <div class="work__row">
+        <div class="empty-item"></div>
+        <div class="work-item--right">
+          <div class="work-item__btns">
+            <a
+              href="https://artsyolya.github.io/react-expense-tracker-app/"
+              target="_blank"
+              class="work-item__btn"
+              >Live App</a
+            >
+            <a
+              href="https://github.com/artsyolya/react-expense-tracker-app"
+              target="_blank"
+              class="work-item__btn"
+              >Source Code</a
+            >
+          </div>
+          <div>
+            <img
+              src="./images/portfolio/react-expense-tracker-mockup.jpg"
+              alt=""
+              class="work-item__img"
+            />
+            <div class="work-item__deco-box--right"></div>
+            <div class="work-item__label--right">
+              <p class="work-item__txt">
+                <strong>React Expense Tracker</strong> / Web Application
+                Development
+              </p>
+              <div class="work-item__txt-container">
+                <img
+                  src="./images/icons/front-end.png"
+                  alt=""
+                  class="work-item__icon"
+                />
+                <p class="work-item__txt">React, HTML5, CSS3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__row">
+        <div class="work-item--left">
+          <div>
+            <img
+              src="images/portfolio/travelz-app-mockup.jpg"
+              alt=""
+              class="work-item__img"
+            />
+            <div class="work-item__deco-box--left"></div>
+            <div class="work-item__label--left">
+              <p class="work-item__txt">
+                <strong>Travelz App</strong> / Web Application Design &
+                Development
+              </p>
+              <div class="work-item__txt-container">
+                <img
+                  src="./images/icons/front-end.png"
+                  alt=""
+                  class="work-item__icon"
+                />
+                <p class="work-item__txt">
+                  JavaScript ES6, HTML5, CSS3, Leaflet API, Web Storage API
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="work-item__btns">
+            <a
+              href="https://artsyolya.github.io/travelz-app/"
+              target="_blank"
+              class="work-item__btn"
+              >Live App</a
+            >
+            <a
+              href="https://github.com/artsyolya/travelz-app"
+              target="_blank"
+              class="work-item__btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="empty-item"></div>
+      </div>
+      <div class="work__row">
+        <div class="empty-item"></div>
+        <div class="work-item--right">
+          <div class="work-item__btns">
+            <a
+              href="https://foto-galleria-template.webflow.io/"
+              target="_blank"
+              class="work-item__btn"
+              >Live Website</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/18KGfyx6ZG9gk52XFEDwA_w5IMcQznqB0?usp=sharing"
+              target="_blank"
+              class="work-item__btn"
+              >Design Mockup</a
+            >
+          </div>
+          <div>
+            <img
+              src="images/portfolio/foto-galleria-mockup.jpg"
+              alt=""
+              class="work-item__img"
+            />
+            <div class="work-item__deco-box--right"></div>
+            <div class="work-item__label--right">
+              <p class="work-item__txt">
+                <strong>Foto Galleria</strong> / Website Design & Development
+              </p>
+              <div class="work-item__txt-container">
+                <img
+                  src="./images/icons/front-end.png"
+                  alt=""
+                  class="work-item__icon"
+                />
+                <p class="work-item__txt">Figma, Webflow, HTML5, CSS3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__row">
+        <div class="work-item--left">
+          <div>
+            <img
+              src="images/portfolio/bankist-mkt-mockup.jpg"
+              alt=""
+              class="work-item__img"
+            />
+            <div class="work-item__deco-box--left"></div>
+            <div class="work-item__label--left">
+              <p class="work-item__txt">
+                <strong>Bankist</strong> / Development from a template
+              </p>
+              <div class="work-item__txt-container">
+                <img
+                  src="./images/icons/front-end.png"
+                  alt=""
+                  class="work-item__icon"
+                />
+                <p class="work-item__txt">JavaScript ES6, HTML5, CSS3</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-item__btns">
+            <a
+              href="https://artsyolya.github.io/mock-bankist-mkt/"
+              target="_blank"
+              class="work-item__btn"
+              >Live Website</a
+            >
+            <a
+              href="https://github.com/artsyolya/mock-bankist-mkt"
+              target="_blank"
+              class="work-item__btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="empty-item"></div>
+      </div>
+      <div class="work__row">
+        <div class="empty-item"></div>
+        <div class="work-item--right">
+          <div class="work-item__btns">
+            <a
+              href="https://photography.olgasago.com"
+              target="_blank"
+              class="work-item__btn"
+              >Live Website</a
+            >
+          </div>
+          <div>
+            <img
+              src="images/portfolio/pho-site-20-mockup.jpg"
+              alt=""
+              class="work-item__img"
+            />
+            <div class="work-item__deco-box--right"></div>
+            <div class="work-item__label--right">
+              <p class="work-item__txt">
+                <strong>Olga Sago Photography</strong> / Website Design &
+                Development
+              </p>
+              <div class="work-item__txt-container">
+                <img
+                  src="./images/icons/front-end.png"
+                  alt=""
+                  class="work-item__icon"
+                />
+                <p class="work-item__txt">WordPress, Elementor, Custom CSS3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SKILLS SECTION -->
+    <section id="about" class="about">
+      <div class="about__content">
+        <h2 class="heading--h2">A Little About Me</h2>
+        <div class="about__grid">
+          <div class="about__img-col">
+            <img
+              src="images/profile-photo-collage-clear.png"
+              alt=" "
+              class="about__img"
+            />
+          </div>
+          <div class="about__txt-col">
+            <p class="about__intro-txt">
+              As you might have already guessed, my name is Olga, but I also go
+              by Olya. I am a semi-self-taught front-end developer, web designer
+              and photographer with experience in both front and back end
+              development, digital marketing, content development, and
+              photography.
+            </p>
+
+            <h3 class="heading--h3">My Skills</h3>
+            <div class="about__skills-grid">
+              <div class="about__skills-row">
+                <img
+                  src="images/icons/multiple-devices-icon.png"
+                  alt=""
+                  class="about__skills-icon"
+                />
+                <p class="about__skills-text">
+                  Responsive web design that works on all devices
+                </p>
+              </div>
+              <div class="about__skills-row">
+                <img
+                  src="images/icons/design-icon.png"
+                  alt=""
+                  class="about__skills-icon"
+                />
+                <p class="about__skills-text">
+                  Follow UX/UI principles in all my builds
+                </p>
+              </div>
+              <div class="about__skills-row">
+                <img
+                  src="images/icons/search-property-icon.png"
+                  alt=""
+                  class="about__skills-icon"
+                />
+                <p class="about__skills-text">
+                  Use Google Analytics and SEO to drive traffic to your websites
+                </p>
+              </div>
+              <div class="about__skills-row">
+                <img
+                  src="images/icons/code-icon.png"
+                  alt=""
+                  class="about__skills-icon"
+                />
+                <p class="about__skills-text">
+                  Troubleshoot and debug code issues
+                </p>
+              </div>
+              <div class="about__skills-row">
+                <img
+                  src="images/icons/pass-fail-icon.png"
+                  alt=""
+                  class="about__skills-icon"
+                />
+                <p class="about__skills-text">
+                  Conduct quality assurance testing
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about__tech">
+            <h3 class="about__tech-heading heading--h3">
+              Technologies I Work With
+            </h3>
+            <div class="about__tech-grid">
+              <div class="about__tech-row scroll--left">
+                <span class="about__tech-txt"
+                  >html5 • css3 • sass • javascript es5/es6 • react • git •
+                  github • wordpress • elementor • webflow •
+                </span>
+                <span class="about__tech-txt"
+                  >html5 • css3 • sass • javascript es5/es6 • react • git •
+                  github • wordpress • elementor • webflow •
+                </span>
+                <span class="about__tech-txt"
+                  >html5 • css3 • sass • javascript es5/es6 • react • git •
+                  github • wordpress • elementor • webflow •
+                </span>
+              </div>
+              <div class="about__tech-row scroll--right">
+                <span class="about__tech-txt"
+                  >figma • adobe photoshop • adobe lightroom • canva • figma •
+                  adobe photoshop • adobe lightroom • canva •
+                </span>
+                <span class="about__tech-txt"
+                  >figma • adobe photoshop • adobe lightroom • canva • figma •
+                  adobe photoshop • adobe lightroom • canva •
+                </span>
+                <span class="about__tech-txt"
+                  >figma • adobe photoshop • adobe lightroom • canva • figma •
+                  adobe photoshop • adobe lightroom • canva •
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2 class="heading--h2">Let's Get in Touch!</h2>
+      <p class="contact__txt">
+        Whether you're looking for a Junior Front-end Web Developer / Web
+        Designer, a freelancer for your next project, someone to collaborate
+        with, want to ask a question, or simply say hi, send me an email.
+      </p>
+      <p class="contact__txt">I would love to connect!</p>
+
+      <a href="mailto:sago.olga@gmail.com" target="_top" class="contact__email"
+        >say hello</a
+      >
+    </section>
+
+    <footer class="footer">
+      <hr class="footer__divider" />
+      <div>
+        <!-- <a href="https://instagram.com/olgas.designs/" target="_blank"
+        ><em class="fab fa-instagram social-icon"></em></a> -->
+        <a href="https://dribbble.com/olga-sago" target="_blank"
+          ><em class="fab fa-dribbble social-icon"></em></a
+        ><a href="https://github.com/artsyolya/" target="_blank"
+          ><em class="fab fa-github-square social-icon"></em></a
+        ><a href="https://www.linkedin.com/in/olga-sago/" target="_blank"
+          ><em class="fab fa-linkedin-in social-icon"></em
+        ></a>
+      </div>
+      <div>
+        <p class="footer__txt">
+          sago.olga@gmail.com | Aurora, CO, USA | Available worldwide
+        </p>
+        <p class="footer__txt">
+          Icons by
+          <a
+            href="https://www.flaticon.com/free-icons/front-end"
+            target="_blank"
+            class="footer__link"
+            >Eucalyp - Flaticon</a
+          >
+          and
+          <a
+            target="_blank"
+            href="https://icons8.com"
+            target="_blank"
+            class="footer__link"
+            >Icons8</a
+          >
+        </p>
+        <p class="footer__txt">Copyright &#169; 2022 Olga Sago</p>
+      </div>
+    </footer>
+  </body>
+</html>

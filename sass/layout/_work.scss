@@ -1,0 +1,48 @@
+.work {
+  width: 75vw;
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+
+  &__row {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $laptop-width) {
+  .work {
+    padding: 10rem 0 12rem 0;
+  }
+}
+@media screen and (max-width: $ms-surface-duo-width) {
+  .work {
+    width: 85vw;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .work {
+    width: 80%;
+    padding: 8rem 0 5rem 0;
+
+    &__row {
+      margin-bottom: 6rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .work {
+    padding: 3rem 0 5rem 0;
+
+    &__row {
+      margin-bottom: 0;
+    }
+  }
+}

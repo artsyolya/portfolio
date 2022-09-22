@@ -1,0 +1,45 @@
+.header {
+  height: 92vh;
+  width: 94vw;
+  margin: 4vh auto 0 auto;
+  background: $color-purple-gradient-fallback;
+  background: $color-purple-gradient-30;
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .header {
+    height: 52vh;
+    max-height: 48rem;
+    width: 95vw;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .header {
+    height: 85vh;
+    max-height: 96vh;
+    width: 96vw;
+    margin: 1rem auto 0 auto;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-md) {
+  .header {
+    height: 96vh;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-sm) {
+  .header {
+    height: 97vh;
+  }
+}
+
+@media screen and (max-height: $mobile-height-vertical-lg) {
+  .header {
+    height: 94vh;
+    width: 98vw;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,126 @@
+.img-puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 60%;
+  height: auto;
+  margin: 3rem 0 0 auto;
+
+  img {
+    width: 100%;
+  }
+
+  &--r1c2,
+  &--r1c4,
+  &--r2c1,
+  &--r2c3,
+  &--r3c2,
+  &--r3c4,
+  &--r4c1,
+  &--r4c3,
+  &--r5c2,
+  &--r5c4 {
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+  }
+  &--r1c1,
+  &--r1c3,
+  &--r2c2,
+  &--r2c4,
+  &--r3c1,
+  &--r3c3,
+  &--r4c2,
+  &--r4c4,
+  &--r5c1,
+  &--r5c3 {
+    animation-duration: 0.75s;
+
+    &:hover {
+      -webkit-animation: fadeOut ease;
+      animation: fadeOut ease;
+      -webkit-animation-duration: 0.2s;
+      animation-duration: 0.2s;
+    }
+  }
+}
+
+/************************************************* 
+	Pageload animation activated
+*************************************************/
+.load-fadein {
+  &.img-puzzle {
+    &--r1c3 {
+      -webkit-animation-delay: 0.25s;
+      animation-delay: 0.25s;
+    }
+    &--r5c1 {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    &--r2c2 {
+      -webkit-animation-delay: 0.75s;
+      animation-delay: 0.75s;
+    }
+    &--r4c4 {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    &--r1c1 {
+      -webkit-animation-delay: 1.25s;
+      animation-delay: 1.25s;
+    }
+    &--r3c3 {
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+    &--r3c1 {
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+    }
+    &--r5c3 {
+      -webkit-animation-delay: 2.25s;
+      animation-delay: 2.25s;
+    }
+    &--r2c4 {
+      -webkit-animation-delay: 2.5s;
+      animation-delay: 2.5s;
+    }
+    &--r4c2 {
+      -webkit-animation-delay: 2.75s;
+      animation-delay: 2.75s;
+    }
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .img-puzzle {
+    width: 69%;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-md) {
+  .img-puzzle {
+    width: 65%;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .img-puzzle {
+    margin: 0 0 0 auto;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-tiny) {
+  .img-puzzle {
+    width: 50%;
+  }
+}
+@media screen and (max-height: $mobile-height-vertical-sm) {
+  .img-puzzle {
+    width: 50%;
+  }
+}

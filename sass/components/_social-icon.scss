@@ -1,0 +1,44 @@
+.social-icon {
+  padding: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  font-size: 2rem;
+  color: $color-black;
+  opacity: 0.8;
+
+  transition: font-size 1s ease;
+
+  &:hover {
+    font-size: 2.5rem;
+    background: $color-purple-gradient-fallback;
+    background: $color-purple-gradient-70;
+    background-size: 100%;
+
+    /* Create gradient text color by turning text into a mask */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    opacity: 0.8;
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $ms-surface-duo-width) {
+  .social-icon {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .social-icon {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1rem 1.3rem;
+
+    &:hover {
+      font-size: 2.5rem;
+    }
+  }
+}

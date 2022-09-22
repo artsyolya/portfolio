@@ -1,0 +1,27 @@
+.empty-item {
+  width: 50%;
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $ms-surface-duo-width) {
+  .empty-item {
+    width: 65%;
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .empty-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .empty-item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .empty-item {
+    display: none;
+  }
+}

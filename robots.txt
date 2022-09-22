@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.olgasago.com/sitemap.xml

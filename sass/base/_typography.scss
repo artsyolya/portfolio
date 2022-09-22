@@ -1,0 +1,405 @@
+/*************************************************
+    Default HTML elements & general classes typography
+**************************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+  text-align: center;
+}
+.heading {
+  &--h2 {
+    font-size: 5.7rem;
+    margin-bottom: 2rem;
+  }
+  &--h3 {
+    font-size: 3.2rem;
+    text-align: left;
+    margin: 2rem 0;
+  }
+}
+
+p,
+a {
+  font-family: $font-text;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+// Media Queries
+@media screen and (max-width: $laptop-width) {
+  .heading--h2 {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: $ms-surface-duo-width) {
+  .heading--h2 {
+    margin-bottom: 3rem;
+    grid-column: 1 / span 2;
+  }
+  p,
+  a {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .heading {
+    &--h2 {
+      font-size: 3.5rem;
+    }
+    &--h3 {
+      font-size: 3rem;
+    }
+  }
+  p,
+  a {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: $mobile-width-horizonral-md) and (max-height: $mobile-height-vertical-sm) {
+  .heading--h2 {
+    font-size: 3rem;
+  }
+  p,
+  a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .heading {
+    &--h2 {
+      font-size: 3rem;
+    }
+    &--h3 {
+      margin: 3rem 0;
+      text-align: center;
+    }
+  }
+  p,
+  a {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-tiny) {
+  .heading--h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/*************************************************
+    Hero section typography
+**************************************************/
+.hero {
+  &__content {
+    color: $color-white;
+  }
+  &-heading {
+    &--main {
+      font-family: $font-heading;
+      font-size: 6.8rem;
+      font-weight: 100;
+      text-align: left;
+    }
+    &--sub {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.load-fadein {
+  &.hero-heading {
+    &--main {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    &--sub {
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $laptop-width) {
+  .hero-heading--main {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-lg) {
+  .hero-heading--main {
+    font-size: 5.3rem;
+  }
+}
+@media screen and (max-width: $ms-surface-duo-width) {
+  .hero-heading--main {
+    font-size: 5.2rem;
+  }
+}
+
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .hero-heading--main {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .hero-heading {
+    &--main {
+      font-size: 3.8rem;
+    }
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .hero {
+    &__content {
+      margin-top: 0;
+    }
+    &-heading {
+      &--main {
+        font-size: 3rem;
+      }
+      &--sub {
+        font-size: 1.8rem;
+        padding-right: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-tiny) {
+  .hero-heading {
+    &--main {
+      font-size: 2.8rem;
+    }
+    &--sub {
+      font-size: 1.6rem;
+    }
+  }
+}
+@media screen and (max-height: $mobile-height-vertical-sm) {
+  .hero-heading {
+    &--main {
+      font-size: 2.8rem;
+    }
+    &--sub {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/*************************************************
+    Portfolio section typography
+**************************************************/
+.work-item__txt {
+  color: $color-white;
+}
+
+// Media Queries
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .work-item__txt {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: $mobile-width-horizonral-md) and (max-height: $mobile-height-vertical-sm) {
+  .work-item__txt {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .work-item__txt {
+    font-size: 1.4rem;
+  }
+}
+
+/*************************************************
+    About section typography
+**************************************************/
+.about__intro-txt {
+  line-height: 2.5rem;
+}
+.about__tech {
+  &-heading {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  &-txt {
+    display: inline-block;
+    font-family: $font-text;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    opacity: 0.8;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $laptop-width) {
+  .about__tech {
+    &-txt {
+      font-size: 2.8rem;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .about__tech {
+    &-heading {
+      margin-top: 4rem;
+    }
+    &-txt {
+      font-size: 2.3rem;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-md) {
+  .about__tech-txt {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .about__tech {
+    &-heading {
+      padding: 0 3rem;
+      margin-top: 2rem;
+    }
+    &-txt {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-md) {
+  .about__tech-heading {
+    padding: 0 4rem;
+  }
+}
+
+/************************************************* 
+    Contact section typography
+**************************************************/
+.contact {
+  &__txt {
+    width: 100%;
+    max-width: 58rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.25;
+  }
+  &__email {
+    display: block;
+    width: 18rem;
+    max-width: 22rem;
+    height: fit-content;
+    margin: 3rem auto 0 auto;
+    padding: 1.8rem 2rem;
+
+    background: $color-wine-light;
+    border-radius: 1rem;
+
+    font-family: $font-text;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: $color-wine-dark;
+    text-decoration: none;
+
+    -webkit-box-shadow: $color-box-shadow-lg;
+    box-shadow: $color-box-shadow-lg;
+    transition: transform 1s ease;
+
+    &:hover {
+      background: $color-wine;
+      color: $color-white;
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $ms-surface-duo-width) {
+  .contact {
+    &__txt {
+      grid-column: 1 / span 1;
+      padding-right: 6rem;
+    }
+    &__email {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .contact {
+    &__txt {
+      max-width: 48rem;
+      padding: 0;
+    }
+    &__email {
+      width: 15rem;
+      font-size: 2.5rem;
+      margin-top: 3rem;
+      -webkit-box-shadow: $color-box-shadow-sm;
+      box-shadow: $color-box-shadow-sm;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-horizonral-md) and (max-height: $mobile-height-vertical-sm) {
+  .contact__email {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .contact {
+    &__txt {
+      width: 85vw;
+    }
+    &__email {
+      padding: 2rem;
+      -webkit-box-shadow: $color-box-shadow-md;
+      box-shadow: $color-box-shadow-md;
+    }
+  }
+}
+
+/************************************************* 
+    Footer section typography
+**************************************************/
+.footer {
+  &__txt {
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-wine-dark;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $ms-surface-duo-width) {
+  .footer__txt {
+    text-align: left;
+  }
+}
+@media screen and (max-width: $tablet-width-horizontal-md) {
+  .footer__txt {
+    text-align: center;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .footer__txt {
+    max-width: 30rem;
+    line-height: 1.5;
+  }
+}

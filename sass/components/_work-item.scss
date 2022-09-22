@@ -1,0 +1,303 @@
+.work-item {
+  &--left,
+  &--right {
+    width: 70%;
+    transition: transform 2s ease;
+    display: flex;
+    justify-content: space-between;
+  }
+  &--left {
+    margin-right: 5rem;
+  }
+  &--right {
+    margin-left: 5rem;
+  }
+
+  // work links
+  &__btns {
+    margin: 0 2rem 0 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-35%);
+  }
+  &__btn {
+    display: block;
+    font-family: $font-text;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.25;
+    color: $color-wine-dark;
+
+    background-color: $color-wine-light;
+    width: 13rem;
+    max-width: 15rem;
+    padding: 1.5rem 1rem 1.3rem 1rem;
+    border-radius: 1rem;
+    margin: 2rem 0 2rem 1.5rem;
+
+    -webkit-box-shadow: $color-box-shadow-sm;
+    box-shadow: $color-box-shadow-sm;
+
+    cursor: pointer;
+    transition: transform 1s ease;
+
+    &:hover {
+      background: $color-wine;
+      color: $color-white;
+      transform: translateY(-0.5rem);
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__img {
+    width: 100%;
+    -webkit-box-shadow: 0 0.5rem 1.2rem 1rem rgba($color-black, 0.12);
+    box-shadow: 0 0.5rem 1.2rem 1rem rgba($color-black, 0.12);
+  }
+
+  // Work decorative box that sits behind image
+  &__deco-box {
+    &--left,
+    &--right {
+      width: 15rem;
+      height: 15rem;
+      border: 0.3rem solid $color-wine-light;
+      margin-top: -13rem;
+      z-index: -1;
+
+      -webkit-box-shadow: 0 0.5rem 1.2rem 1rem rgba($color-black, 0.12);
+      box-shadow: 0 0.5rem 1.2rem 1rem rgba($color-black, 0.12);
+    }
+    &--left {
+      margin-left: -2rem;
+    }
+    &--right {
+      float: right;
+      margin-right: -2rem;
+    }
+  }
+
+  // Work label container
+  &__label {
+    &--left,
+    &--right {
+      position: relative;
+      background-color: #2f001e;
+      width: 100%;
+      line-height: 1.25;
+      padding: 1.7rem;
+    }
+    &--left {
+      float: right;
+      margin-right: -5rem;
+      margin-top: -5rem;
+
+      -webkit-box-shadow: -0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.35),
+        0 0.5rem 1.2rem 1rem rgba(31, 31, 31, 0.12);
+      box-shadow: -0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.35),
+        0 0.5rem 1.2rem 1rem rgba(31, 31, 31, 0.12);
+    }
+    &--right {
+      margin-left: -5rem;
+      margin-top: -3rem;
+
+      -webkit-box-shadow: 0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.35),
+        0 0.5rem 1.2rem 1rem rgba(31, 31, 31, 0.12);
+      box-shadow: 0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.35),
+        0 0.5rem 1.2rem 1rem rgba(31, 31, 31, 0.12);
+    }
+  }
+
+  &__txt-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2.2rem;
+  }
+  &__icon {
+    width: 13%;
+    padding-right: 1.5rem;
+    color: $color-white;
+  }
+}
+
+/************************************************* 
+	Media Queries
+*************************************************/
+@media screen and (max-width: $laptop-width) {
+  .work-item {
+    &__btns {
+      top: 45%;
+    }
+    &__deco-box {
+      &--left,
+      &--right {
+        width: 12rem;
+        height: 12rem;
+        margin-top: -10rem;
+      }
+      &--left {
+        margin-left: -2.5rem;
+      }
+      &--right {
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: $ms-surface-duo-width) {
+  .work-item {
+    &__deco-box {
+      &--left,
+      &--right {
+        width: 10rem;
+        height: 10rem;
+        margin-top: -8rem;
+      }
+    }
+    &__label {
+      &--left {
+        margin-right: -3rem;
+        margin-top: -4.2rem;
+      }
+      &--right {
+        margin-top: -2.2rem;
+        margin-left: -3rem;
+      }
+    }
+    &__icon {
+      width: 16%;
+    }
+    &__btns {
+      top: 40%;
+    }
+  }
+}
+@media screen and (max-width: $tablet-width-vertical-lg) {
+  .work-item {
+    &--left,
+    &--right {
+      margin: 0;
+    }
+    &__deco-box {
+      &--left,
+      &--right {
+        width: 7rem;
+        height: 7rem;
+        margin-top: -5.5rem;
+      }
+    }
+    &__label {
+      &--left,
+      &--right {
+        padding: 1rem 1.5rem;
+      }
+      &--left {
+        margin-right: -3rem;
+        margin-top: -3.5rem;
+      }
+      &--right {
+        margin-left: -2.5rem;
+        margin-top: -2rem;
+      }
+    }
+    &__btns {
+      top: 44%;
+    }
+    &__btn {
+      max-width: 11.5rem;
+      padding: 1.1rem 0.8rem 0.8rem 0.8rem;
+      margin: 2.5rem 0 2.5rem 1.2rem;
+    }
+    &__icon {
+      width: 5vw;
+      padding-right: 1.1rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-lg) {
+  .work-item {
+    &--left,
+    &--right {
+      width: 100%;
+      margin: 0;
+      padding: 4rem 0;
+    }
+    &--left {
+      flex-direction: column;
+    }
+    &--right {
+      flex-direction: column-reverse;
+    }
+    &__btns {
+      width: 100vw;
+      margin: 4rem 0 0 -6vw;
+      position: revert;
+      top: 0;
+      transform: none;
+    }
+    &__btn {
+      display: inline;
+      padding: 2.3rem 1.6rem 2.1rem 1.6rem;
+      margin: 0 3rem 0 0;
+      font-size: 1.8rem;
+    }
+    &__deco-box {
+      &--left,
+      &--right {
+        width: 6rem;
+        height: 6rem;
+        margin-top: -4.5rem;
+      }
+      &--left {
+        margin-left: 70vw;
+      }
+      &--right {
+        margin-right: -2rem;
+      }
+    }
+    &__img,
+    &__deco-box--left,
+    &__deco-box--right {
+      -webkit-box-shadow: 0 0.4rem 1.2rem 0.5rem rgba($color-black, 0.12);
+      box-shadow: 0 0.4rem 1.2rem 0.5rem rgba($color-black, 0.12);
+    }
+    &__label {
+      &--left,
+      &--right {
+        margin-left: -2rem;
+        margin-right: 2rem;
+        padding: 1rem 1.5rem;
+        -webkit-box-shadow: 0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.4),
+          0 0.5rem 1.2rem 1rem rgba($color-wine-black, 0.12);
+        box-shadow: 0.5rem 0.5rem 0 0 rgba($color-wine-black, 0.4),
+          0 0.5rem 1.2rem 1rem rgba($color-wine-black, 0.12);
+      }
+      &--left {
+        margin-top: -3.5rem;
+      }
+      &--right {
+        margin-top: -2rem;
+      }
+    }
+    &__icon {
+      width: 4rem;
+    }
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-md) {
+  .work-item__deco-box--left {
+    margin-left: 69vw;
+  }
+}
+@media screen and (max-width: $mobile-width-vertical-tiny) {
+  .work-item {
+    &__btn {
+      margin: 0 2rem 0 0;
+      font-size: 1.6rem;
+    }
+  }
+}
