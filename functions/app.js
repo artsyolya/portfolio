@@ -108,9 +108,10 @@ navSlide();
 const work = document.querySelector(".nav-work");
 const about = document.querySelector(".nav-about");
 const contact = document.querySelector(".nav-contact");
+const viewWork = document.querySelector(".hero__view-work");
 
 work.addEventListener("click", function () {
-  smoothScroll("#work", 3000);
+  smoothScroll("#work", 2000);
 });
 
 about.addEventListener("click", function () {
@@ -119,4 +120,8 @@ about.addEventListener("click", function () {
 
 contact.addEventListener("click", function () {
   smoothScroll("#contact", 2800);
+});
+
+viewWork.addEventListener("click", function () {
+  smoothScroll("#work", 1800);
 });
