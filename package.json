@@ -9,6 +9,6 @@
   "author": "Olga Sago",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^9.0.0"
   }
 }
